@@ -1,6 +1,7 @@
 let upPage = document.querySelector(".upPage");
 let productNav = document.querySelector(".productinfomation-container");
 let ModalMenu = document.querySelector(".modal");
+let Menu = document.querySelector(".main-menu");
 let setShow = document.getElementsByClassName("setShow");
 
 console.log(productNav);
@@ -220,9 +221,10 @@ let closeMenuModal = () => {
 };
 function checkScreenSize() {
   if (window.innerWidth <= 1201) {
-    ModalMenu.style.display = "none"; // Ẩn modal nếu màn hình nhỏ hơn 1201px
-  } else {
-    ModalMenu.style.display = "block"; // Hiển thị modal nếu màn hình lớn hơn 1201px
+    Menu.style.display = "none"
+  } else{
+    Menu.style.display = "flex"
+    ModalMenu.style.display = "none"
   }
 }
 
