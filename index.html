@@ -22,7 +22,7 @@
                     </div>
                     <div class="header-nav">
                         <nav class="main-menu">
-                            <li class="nav-item">Trang chủ</li>
+                            <li class="nav-item activeMenu" >Trang chủ</li>
                             <li class="nav-item">Giới Thiệu</li>
                             <div class="nav-products">
                                 <li class="nav-item dropdown">Sản Phẩm
@@ -57,7 +57,9 @@
                             </div>
                             <li class="nav-item">Tin tức</li>
                             <li class="nav-item">Hỗ trợ</li>
-                            <i class="fa-solid fa-magnifying-glass nav-search"></i>
+                            <i class="fa-solid fa-magnifying-glass nav-search" onclick="openIputSearch()">
+                                <input type="text" id="search" placeholder="Tìm kiếm..." class="search-input" />
+                            </i>
                         </nav>
                         
                         <i class="fa-solid fa-bars tiles" style="display: none;" onclick="openMenuModal()"></i>
@@ -100,7 +102,9 @@
                                 </div>
                                 <li class="product-li">Tin tức</li>
                                 <li class="product-li">Hỗ trợ</li>
-                                <i class="fa-solid fa-magnifying-glass search"></i>
+                                <i class="fa-solid fa-magnifying-glass search " onclick="openIputSearch()">
+                                    <input type="text" id="search" placeholder="Tìm kiếm..." class="search-input"/>
+                                </i>
                                 <img class="contact-menu_img" src="./img/contact2.png" alt="">
                             </nav>
                         </div>
@@ -590,7 +594,7 @@
                     prevArrow:
                         "<button type='button' class='slick-prev pull-left up'><i class='fas fa-chevron-left'></i></button>",
                     nextArrow:
-                        "<button type='button' class='slick-next pull-right'><i class='fas fa-chevron-right'></i></button>",
+                        "<button type='button' class='slick-next pull-right setCustom'><i class='fas fa-chevron-right'></i></button>",
                 });
 
                 $('.news-slide').slick({
@@ -610,9 +614,9 @@
                         // instead of a settings object
                     ],
                     prevArrow:
-                        "<button type='button' class='slick-prev pull-left update-left '><i class='fas fa-chevron-left'></i></button>",
+                        "<button type='button' class='slick-prev pull-left update-left setVideo-left '><i class='fas fa-chevron-left'></i></button>",
                     nextArrow:
-                        "<button type='button' class='slick-next pull-right update-right' ><i class='fas fa-chevron-right'></i></button>",
+                        "<button type='button' class='slick-next pull-right update-right setVideo-right' ><i class='fas fa-chevron-right'></i></button>",
                 });
             });
             $('.product-menu').slick({
@@ -650,9 +654,9 @@
                     // instead of a settings object
                 ],
                 prevArrow:
-                    "<button type='button' class='slick-prev pull-left productbutton-pre'><i class='fas fa-chevron-left'></i></button>",
+                    "<button type='button' class='slick-prev pull-left productbutton-pre setDisplay` ><i class='fas fa-chevron-left'></i></button>",
                 nextArrow:
-                    "<button type='button' class='slick-next pull-right productbutton-next'><i class='fas fa-chevron-right'></i></button>",
+                    "<button type='button' class='slick-next pull-right productbutton-next setNext'><i class='fas fa-chevron-right'></i></button>",
             });
 
         </script>

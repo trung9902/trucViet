@@ -3,6 +3,8 @@ let productNav = document.querySelector(".productinfomation-container");
 let ModalMenu = document.querySelector(".modal");
 let Menu = document.querySelector(".main-menu");
 let setShow = document.getElementsByClassName("setShow");
+let search = document.querySelector(".search-input");
+console.log(search);
 
 console.log(productNav);
 window.addEventListener("scroll", () => {
@@ -221,13 +223,24 @@ let closeMenuModal = () => {
 };
 function checkScreenSize() {
   if (window.innerWidth <= 1201) {
-    Menu.style.display = "none"
-  } else{
-    Menu.style.display = "flex"
-    ModalMenu.style.display = "none"
+    Menu.style.display = "none";
+  } else {
+    Menu.style.display = "flex";
+    ModalMenu.style.display = "none";
   }
 }
+let openIputSearch = () => {
+  let isContentVisible = false; 
+  if(!isContentVisible){
+    search.style.display = "block";
+    console.log(isContentVisible);
+    
+  }else{
+    search.style.display = "none";
+    console.log('ssss');
+    
+  }
 
+};
 checkScreenSize();
-
 window.addEventListener("resize", checkScreenSize);
