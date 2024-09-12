@@ -1,0 +1,452 @@
+.navigation {
+    background: url(/img/support.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 249px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #585959;
+    color: #fff;
+    margin-top: 101px;
+    background-position: top;
+}
+
+h1.navigation-title {
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.navigation-title::after {
+    content: '';
+    position: absolute;
+    width: 72px;
+    height: 5px;
+    background-color: #fff;
+    bottom: -16%;
+    left: 0%;
+}
+
+.navigation__box {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+ul.navigation__list {
+    display: flex;
+    gap: 5px;
+}
+
+a.navigation__link {
+    color: #fff;
+}
+
+.navigation__item+.navigation__item::before {
+    content: '/';
+}
+
+/* content */
+.support-content {}
+
+h1.support-title {
+    text-align: center;
+    padding-top: 57px;
+}
+
+.support-content_box {
+    background: url(/img/39bd647a-12bb-4e09-a2c2-1646a4f528c2.jfif) no-repeat left top;
+    background-size: 100% 40%;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    margin-bottom: 125px;
+    padding: 15px;
+}
+
+/*  */
+.icon-container {
+    position: relative;
+    width: calc((100% - 50px) / 3);
+}
+
+.icon-container .support-content__item {
+    height: 230px;
+    background-color: #fff;
+    border-radius: 17px;
+    filter: drop-shadow(0px 0px 5px rgb(138, 132, 132));
+}
+
+.icon-container:first-child .support-content__item {
+    height: 276px;
+    display: grid;
+    border-radius: 10px;
+    overflow: hidden;
+    background: none;
+    transform-origin: bottom;
+    filter: drop-shadow(0px 0px 5px rgb(138, 132, 132));
+}
+
+.icon-container:last-child .support-content__item {
+    height: 276px;
+    display: grid;
+    border-radius: 10px;
+    overflow: hidden;
+    background: none;
+    transform-origin: bottom;
+    filter: drop-shadow(0px 0px 5px rgb(138, 132, 132));
+}
+
+.icon-container:first-child .support-content__item:before {
+    content: "";
+    background-color: #fff;
+    border-radius: inherit;
+    transform: skewY(-7deg);
+    transform-origin: bottom left;
+}
+
+.icon-container:last-child .support-content__item:before {
+    content: "";
+    background-color: #fff;
+    border-radius: inherit;
+    transform: skewY(7deg);
+    transform-origin: bottom right;
+}
+
+.support-content_user {
+    display: flex;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 95px;
+}
+
+.contact-card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 9px;
+    gap: 18px;
+    text-align: center;
+}
+
+img.support-icon {
+    position: absolute;
+    z-index: 1;
+    top: -49px;
+    left: 150px;
+}
+
+.contact-card .title {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 19px;
+    -webkit-line-clamp: 3;
+    height: 57px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.support-info {
+    font-weight: 700;
+    color: #36D99A;
+}
+
+/*  */
+.contact-container {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    width: 1200px;
+    max-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 85px;
+}
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 50px;
+    height: 4px;
+    background-color: #32c671;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    margin-right: 10px;
+    background-color: #32c671;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.contact-form {
+    width: 50%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 45px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.contact-form input:focus-visible {
+    border: 2px solid #33D898;
+}
+
+.contact-form textarea {
+    height: 118px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #32c671;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.contact-form button:hover {
+    background-color: #28a745;
+}
+
+span.icon-title {
+    color: #000;
+    font-weight: 200;
+}
+
+/*  */
+
+.video-tutorial-container h2 {
+    margin-bottom: 10px;
+}
+.video-thumbnail-wrapper {
+    position: relative;
+}
+
+.line {
+    width: 50px;
+    height: 4px;
+    background-color: #32c671;
+    margin-bottom: 20px;
+}
+
+.main-video {
+    display: flex;
+    align-items: flex-start;
+    background-color: #F6F7FA;
+    border-radius: 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px; */
+    margin-bottom: 20px;
+}
+
+.video-thumbnail,
+.video-thumbnail_item {
+    width: 100%;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.video-description {
+    width: 48%;
+    padding: 33px;
+}
+
+
+img.video-thumbnail {
+    height: 396px;
+    position: relative;
+}
+
+img.video-thumbnail_item {
+    height: 210px;
+}
+
+.video-description h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.video-description p {
+    margin: 0;
+    color: #333;
+}
+
+.other-videos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    background-color: #fff;
+    width: calc(33% - 20px);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-card img {
+    width: 100%;
+    display: block;
+}
+
+.video-info {
+    padding: 10px;
+}
+
+.video-info h4 {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.video-tutorial-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 122px 0px 0px 33px;
+}
+
+.custom-icon {
+    position: absolute;
+    top: 80px;
+    color: #fff;
+    left: 42%;
+    font-size: 58px;
+}
+
+i.fa-solid.fa-circle-play.custom-thumbnail {
+    position: absolute;
+    left: 42%;
+    top: 42%;
+    font-size: 78px;
+    color: #fff;
+}
+@media (max-width: 376px) {
+    img.support-icon {
+        left: 133px;
+    }
+    i.fa-solid.fa-circle-play.custom-thumbnail {
+        top: 58%;
+    }
+    .trySoftware {
+        height: auto;
+    }
+}
+  
+@media (max-width: 576px) {
+    .icon-container:first-child .support-content__item:before {
+        transform: skewY(0deg);
+    }
+
+    .icon-container:last-child .support-content__item:before {
+
+        transform: skewY(0deg);
+    }
+
+    .support-content_user {
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    .icon-container {
+        width: 100%;
+    }
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-info {
+        width: 100%;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .main-video {
+        flex-direction: column;
+    }
+    .video-description {
+        width: 100%;
+    }
+    .other-videos {
+        flex-direction: column;
+    }
+    .video-card {
+    width: 100%;
+    }
+    .video-thumbnail, .video-thumbnail_item {
+        margin-right: 0px;
+    }
+    .video-tutorial-container {
+       padding: 20px 0 0 0;
+    }
+    i.fa-solid.fa-circle-play.custom-thumbnail {
+        top: 60%;  
+    }
+    img.video-thumbnail {
+        height: 329px;
+        position: relative;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    img.support-icon {
+        left: 81px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    img.support-icon {
+        left: 83px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    img.support-icon {
+        left: 114px;
+    }
+}

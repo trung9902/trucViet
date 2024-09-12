@@ -4,6 +4,23 @@ let ModalMenu = document.querySelector(".modal");
 let Menu = document.querySelector(".main-menu");
 let setShow = document.getElementsByClassName("setShow");
 let search = document.querySelector(".search-input");
+let modalRegisted = document.querySelector(".modal_registed");
+console.log(modalRegisted);
+let closeRegisted = () => {
+  if (modalRegisted) {
+    modalRegisted.style.display = "none"; // Ẩn phần tử đầu tiên tìm thấy
+  }
+  console.log('close');
+};
+let openRegisted = () => {
+  if (modalRegisted) {
+    modalRegisted.style.display = "block"; // Ẩn phần tử đầu tiên tìm thấy
+    // modalRegisted.classList.add("modal_hidden");
+  }
+  console.log('close');
+};
+
+
 console.log(search);
 
 console.log(productNav);
@@ -13,14 +30,6 @@ window.addEventListener("scroll", () => {
   } else {
     upPage.style.display = "none";
   }
-});
-upPage.addEventListener("click", () => {
-  console.log("sss");
-
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
 });
 
 let loadContent = (number) => {
@@ -218,7 +227,7 @@ let loadContent = (number) => {
 let openMenuModal = () => {
   ModalMenu.style.display = "block";
 };
-let closeMenuModal = () => {
+var closeMenuModal = () => {
   ModalMenu.style.display = "none";
 };
 function checkScreenSize() {
@@ -230,17 +239,100 @@ function checkScreenSize() {
   }
 }
 let openIputSearch = () => {
-  let isContentVisible = false; 
-  if(!isContentVisible){
+  let isContentVisible = false;
+  if (!isContentVisible) {
     search.style.display = "block";
     console.log(isContentVisible);
-    
-  }else{
+  } else {
     search.style.display = "none";
-    console.log('ssss');
-    
+    console.log("ssss");
   }
-
 };
 checkScreenSize();
 window.addEventListener("resize", checkScreenSize);
+
+const products = [
+  {
+    id: 1,
+    img: "./img/product/item1.png",
+    tittle: "Phần mềm Quản lý khách sạn",
+    description:
+      "Với mức độ tăng trưởng ngày càng nhanh và mạnh mẽ của ngành kinh doanh khách sạn thì yêu cầu đặt ra với các nhà quản lý là nên sử dụng phương pháp, phần mềm quản lý khách sạn.",
+  },
+  {
+    id: 2,
+    img: "./img/product/item2.png",
+    tittle: "Phần mềm Quản lý nhà hàng",
+    description:
+      "Phần mềm quản lý nhà hàng là công cụ hỗ trợ kinh doanh nhà hàng đơn giản và hiệu quả hơn với việc xây dựng một quy trình bán hàng khép kín từ order, ra đồ đến thanh toán.",
+  },
+  {
+    id: 3,
+    img: "./img/product/item2.png",
+    tittle: "Phần mềm Quản lý quán Cà phê",
+    description:
+      "Phần mềm quản lý quán cà phê giúp nhân viên của bạn có thể gọi món và bán hàng dễ dàng nhanh chóng trên máy tính bảng.",
+  },
+  {
+    id: 4,
+    img: "./img/product/item4.png",
+    tittle: "Phần mềm Quản lý Karaoke",
+    description:
+      "Giải pháp quản lý quán hát là sự kết hợp hoàn hảo của phần mềm quản lý giúp cho việc quản lý được chính xác và triệt để.",
+  },
+  {
+    id: 5,
+    img: "./img/product/item5.png",
+    tittle: "Phần mềm Quản lý khu vui chơi, giải trí",
+    description:
+      "Hệ thống kiểm vé soát ra vào được ứng dụng trong nhiều lĩnh vực tại các khu vui chơi giải trí, hay tại các sân hay trong tòa nhà trung tâm thương mại.",
+  },
+  {
+    id: 6,
+    img: "./img/product/item6.png",
+    tittle: "Phần mềm Quản lý kho",
+    description:
+      "Báo cáo tồn kho, giá trị tồn hay tình hình xuất – nhập – tồn được cập nhật liên tục ngay trên điện thoại giúp bạn nắm rõ lượng hàng hóa trong kho, phát hiện sai sót sớm nhất, từ đó giảm thiểu sự cố lệch kho.",
+  },
+  {
+    id: 7,
+    img: "./img/product/item7.png",
+    tittle: "Phần mềm Quản lý siêu thị",
+    description:
+      "Siêu thị của bạn gặp tình trạng quá đông khách và xảy ra tình trạng khách xếp hàng rất dài trước quầy thu ngân?",
+  },
+  {
+    id: 8,
+    img: "./img/product/item8.png",
+    tittle: "Phần mềm Quản lý văn phòng phẩm",
+    description:
+      "Phần mềm quản lý văn phòng phẩm giúp bán hàng nhanh, chuyên nghiệp, kết nối được với các sản phẩm đầu đọc mã vạch, két tiền, máy in...",
+  },
+  {
+    id: 9,
+    img: "./img/product/item9.png",
+    tittle: "Phần mềm Quản lý shop quần áo",
+    description:
+      "Phần mềm quản lý bán hàng shop thời trang là phần mềm hỗ trợ các chủ shop kinh doanh bán hàng, tính tiền shop thời trang một cách đơn giản, hiệu quả và chính xác.",
+  },
+];
+
+let listProduct = () => {
+  let listParam = document.querySelector(".list-param");
+  let runView = products.map((item) => {
+    return `     <a href="" class="param-item">
+                <img src="${item?.img}" alt="" class="param-item__image">
+                 <div class="param-item_box"><b class="param-item__title">${item.tittle}</b>
+                <p class="param-item__description">${item.description}</p></div>
+            </a>`;
+  });
+
+  listParam.innerHTML = runView.join("");
+};
+listProduct();
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};

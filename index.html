@@ -18,50 +18,57 @@
             <div class="row">
                 <div class="header-box">
                     <div class="header-logo">
-                        <img class="logo_img" src="./img/logo.png" alt="">
+                        <a href="">
+                            <img class="logo_img" src="./img/logo.png" alt="">
+
+                        </a>
                     </div>
                     <div class="header-nav">
                         <nav class="main-menu">
-                            <li class="nav-item activeMenu" >Trang chủ</li>
-                            <li class="nav-item">Giới Thiệu</li>
-                            <div class="nav-products">
-                                <li class="nav-item dropdown">Sản Phẩm
-                                    <div class="dropdown-menu">
-                                        <div class="dropdown-content">
-                                            <div class="commercial-items">
-                                                <h3 class="dropdown-title">Sản phẩm thương mại</h3>
-                                                <ul class="dropdown-list">
-                                                    <li>Phần mềm Quản lý khách sạn</li>
-                                                    <li>Phần mềm Quản lý nhà hàng</li>
-                                                    <li>Phần mềm Quản lý quán Cà phê</li>
-                                                    <li>Phần mềm Quản lý khu vui chơi, giải trí</li>
-                                                    <li>Phần mềm Quản lý kho</li>
-                                                    <li>Phần mềm Quản lý Siêu thị</li>
-                                                    <li>Phần mềm Quản lý văn phòng phẩm</li>
-                                                    <li>Phần mềm Quản lý shop quần áo</li>
-                                                    <li>Phần mềm Quản lý phụ tùng ô tô</li>
-                                                    <li>Phần mềm chấm điểm CCHC cấp tỉnh, cấp huyện</li>
-                                                    <li>Phần mềm Quản lý hồ sơ Người có công</li>
-                                                </ul>
-                                            </div>
-                                            <div class="free-items">
-                                                <h3 class="dropdown-title">Sản phẩm miễn phí</h3>
-                                                <ul class="dropdown-list">
-                                                    <li>Phần mềm Quản lý quán ăn</li>
-                                                    <li>Phần mềm Quản lý tạp hóa</li>
-                                                </ul>
-                                            </div>
+
+                            <li class="nav-item activeMenu"><a href="">Trang chủ</a></li>
+                            <li class="nav-item"><a href="">Giới Thiệu</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="">Sản Phẩm</a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-content">
+                                        <div class="commercial-items">
+                                            <h3 class="dropdown-title">Sản phẩm thương mại</h3>
+                                            <ul class="dropdown-list">
+                                                <li><a href="">Phần mềm Quản lý khách sạn</a></li>
+                                                <li><a href="">Phần mềm Quản lý nhà hàng</a></li>
+                                                <li><a href="">Phần mềm Quản lý quán Cà phê</a></li>
+                                                <li><a href="">Phần mềm Quản lý khu vui chơi, giải trí</a></li>
+                                                <li><a href="">Phần mềm Quản lý kho</a></li>
+                                                <li><a href="">Phần mềm Quản lý Siêu thị</a></li>
+                                                <li><a href="">Phần mềm Quản lý văn phòng phẩm</a></li>
+                                                <li><a href="">Phần mềm Quản lý shop quần áo</a></li>
+                                                <li><a href="">Phần mềm Quản lý phụ tùng ô tô</a></li>
+                                                <li><a href="">Phần mềm chấm điểm CCHC cấp tỉnh, cấp huyện</a></li>
+                                                <li><a href="">Phần mềm Quản lý hồ sơ Người có công</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="free-items">
+                                            <h3 class="dropdown-title">Sản phẩm miễn phí</h3>
+                                            <ul class="dropdown-list">
+                                                <li><a href="">Phần mềm Quản lý quán ăn</a></li>
+                                                <li><a href="">Phần mềm Quản lý tạp hóa</a></li>
+                                            </ul>
                                         </div>
                                     </div>
-                                </li>
-                            </div>
-                            <li class="nav-item">Tin tức</li>
-                            <li class="nav-item">Hỗ trợ</li>
-                            <i class="fa-solid fa-magnifying-glass nav-search" onclick="openIputSearch()">
-                                <input type="text" id="search" placeholder="Tìm kiếm..." class="search-input" />
-                            </i>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="">Tin tức</a></li>
+                            <li class="nav-item"><a href="">Hỗ trợ</a></li>
+                            <li class="nav-search">
+                                <i class="fa-solid fa-magnifying-glass" onclick="openIputSearch()">
+                                    <input type="text" id="search" placeholder="Tìm kiếm..." class="search-input" />
+                                </i>
+                            </li>
+
                         </nav>
-                        
+
+
                         <i class="fa-solid fa-bars tiles" style="display: none;" onclick="openMenuModal()"></i>
                         <div class="modal">
                             <i class="fa-solid fa-xmark close" style="display: none;" onclick="closeMenuModal()"></i>
@@ -103,15 +110,26 @@
                                 <li class="product-li">Tin tức</li>
                                 <li class="product-li">Hỗ trợ</li>
                                 <i class="fa-solid fa-magnifying-glass search " onclick="openIputSearch()">
-                                    <input type="text" id="search" placeholder="Tìm kiếm..." class="search-input"/>
+                                    <input type="text" id="search" placeholder="Tìm kiếm..." class="search-input" />
                                 </i>
-                                <img class="contact-menu_img" src="./img/contact2.png" alt="">
+
+
                             </nav>
                         </div>
                     </div>
-                    <div class="header-contact">
-                        <img class="contact_img" src="./img/contact.png" alt="">
+                    <div class="header-contact-box">
+                        <div class="header-contact">
+                            <div class="header-contact__icon-wrapper">
+                                <i class="fa-solid fa-user-large header-contact__icon"></i>
+                                <p class="header-contact__label">Hotline</p>
+                            </div>
+                            <div class="header-contact__numbers">
+                                <p class="header-contact__number">913.289.125</p>
+                                <p class="header-contact__number">0962.688.616</p>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -206,7 +224,7 @@
                             </div>
                         </div>
                     </div>
-                    <img class="productinfomation_image" src="/img/panel.jfif" alt="">
+                    <img class="productinfomation_image" src="/img/panel.jpg" alt="">
                     <div class="productinfomation-container">
                         <div class="des-box">
                             <p><i class="fa-regular fa-circle-check green"></i>&nbsp&nbsp<b>Nền tảng vận hành khách
@@ -230,7 +248,7 @@
                             <div class="introduce_bt additional-class">
                                 <button class="additional-button-class">Xem thêm</button>
                             </div>
-                            
+
 
                         </div>
                         <div class="productinfomation-image">
@@ -252,11 +270,16 @@
                         <img src="./img/gỉl-yellow.jfif" alt="">
                     </div>
                     <div class="softwareBenefits-des_box">
-                        <p class="item1 item"><i class="fa-solid fa-right-long setShow"></i>Giao diện dễ sử dụng, thao tác linh hoạt trên PC, Mobile App </p>
-                        <p class="item"><i class="fa-solid fa-right-long setShow"></i>Có khả năng tuỳ biến phần mềm theo quy trình & nhu cầu doanh nghiệp</p>
-                        <p class="item"><i class="fa-solid fa-right-long setShow"></i>Dịch vụ hậu mãi hỗ trợ 24/7 xuất sắc</p>
-                        <p class="item"><i class="fa-solid fa-right-long setShow"></i>Tự động hóa với quy trình Self-Order</p>
-                        <p class="item2 item"><i class="fa-solid fa-right-long setShow"></i>Quản lý từ xa mọi lúc, mọi nơi một cách dễ dàng</p>
+                        <p class="item1 item"><i class="fa-solid fa-right-long setShow"></i>Giao diện dễ sử dụng, thao
+                            tác linh hoạt trên PC, Mobile App </p>
+                        <p class="item"><i class="fa-solid fa-right-long setShow"></i>Có khả năng tuỳ biến phần mềm theo
+                            quy trình & nhu cầu doanh nghiệp</p>
+                        <p class="item"><i class="fa-solid fa-right-long setShow"></i>Dịch vụ hậu mãi hỗ trợ 24/7 xuất
+                            sắc</p>
+                        <p class="item"><i class="fa-solid fa-right-long setShow"></i>Tự động hóa với quy trình
+                            Self-Order</p>
+                        <p class="item2 item"><i class="fa-solid fa-right-long setShow"></i>Quản lý từ xa mọi lúc, mọi
+                            nơi một cách dễ dàng</p>
                     </div>
                 </div>
             </div>
@@ -411,8 +434,7 @@
             <div class="news">
                 <div class="introduce-title_box news-title">
                     <img src="/img/intro1.png" alt="" class="">
-                    <p class="intro-tittle">Video <br><b class="tittle_b">Hướng
-                            Dẫn</b></p>
+                    <p class="intro-tittle">Trúc Việt<br><b class="tittle_b">Tin Tức</b></p>
                     <img src="/img/intro2.png" alt="" class="">
                 </div>
                 <div class="news-slide">
@@ -566,7 +588,7 @@
         <div class="iconSMS">
             <img src="/img/iconSMS.png" alt="">
         </div>
-        <i class="fa-regular fa-circle-up upPage"></i>
+        <i class="fa-regular fa-circle-up upPage" onclick="scrollToTop()"></i>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
@@ -592,7 +614,7 @@
                         // instead of a settings object
                     ],
                     prevArrow:
-                        "<button type='button' class='slick-prev pull-left up'><i class='fas fa-chevron-left'></i></button>",
+                        "<button type='button' class='slick-prev pull-left up setUp'><i class='fas fa-chevron-left'></i></button>",
                     nextArrow:
                         "<button type='button' class='slick-next pull-right setCustom'><i class='fas fa-chevron-right'></i></button>",
                 });
@@ -621,7 +643,7 @@
             });
             $('.product-menu').slick({
                 dots: true,
-                infinite: false,
+                infinite: true,
                 speed: 300,
                 slidesToShow: 5,
                 slidesToScroll: 4,
@@ -646,7 +668,8 @@
                         breakpoint: 768,
                         settings: {
                             slidesToShow: 1,
-                            slidesToScroll: 1
+                            slidesToScroll: 1,
+                            Infinity:true,
                         }
                     }
                     // You can unslick at a given breakpoint now by adding:
@@ -660,6 +683,13 @@
             });
 
         </script>
+        <script>upPage.addEventListener("click", () => {
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            });</script>
         <script src="/trucViet.js"></script>
 </body>
 

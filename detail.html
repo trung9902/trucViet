@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./detail.css">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="shortcut icon" href="/img/New folder/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="header-box">
+                    <div class="header-logo">
+                        <a href="">
+                            <img class="logo_img" src="./img/logo.png" alt="">
+
+                        </a>
+                    </div>
+                    <div class="header-nav">
+                        <nav class="main-menu">
+
+                            <li class="nav-item activeMenu"><a href="">Trang chủ</a></li>
+                            <li class="nav-item"><a href="">Giới Thiệu</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="">Sản Phẩm</a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-content">
+                                        <div class="commercial-items">
+                                            <h3 class="dropdown-title">Sản phẩm thương mại</h3>
+                                            <ul class="dropdown-list">
+                                                <li><a href="">Phần mềm Quản lý khách sạn</a></li>
+                                                <li><a href="">Phần mềm Quản lý nhà hàng</a></li>
+                                                <li><a href="">Phần mềm Quản lý quán Cà phê</a></li>
+                                                <li><a href="">Phần mềm Quản lý khu vui chơi, giải trí</a></li>
+                                                <li><a href="">Phần mềm Quản lý kho</a></li>
+                                                <li><a href="">Phần mềm Quản lý Siêu thị</a></li>
+                                                <li><a href="">Phần mềm Quản lý văn phòng phẩm</a></li>
+                                                <li><a href="">Phần mềm Quản lý shop quần áo</a></li>
+                                                <li><a href="">Phần mềm Quản lý phụ tùng ô tô</a></li>
+                                                <li><a href="">Phần mềm chấm điểm CCHC cấp tỉnh, cấp huyện</a></li>
+                                                <li><a href="">Phần mềm Quản lý hồ sơ Người có công</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="free-items">
+                                            <h3 class="dropdown-title">Sản phẩm miễn phí</h3>
+                                            <ul class="dropdown-list">
+                                                <li><a href="">Phần mềm Quản lý quán ăn</a></li>
+                                                <li><a href="">Phần mềm Quản lý tạp hóa</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="">Tin tức</a></li>
+                            <li class="nav-item"><a href="">Hỗ trợ</a></li>
+                            <li class="nav-search">
+                                <i class="fa-solid fa-magnifying-glass" onclick="openIputSearch()">
+                                    <input type="text" id="search" placeholder="Tìm kiếm..." class="search-input" />
+                                </i>
+                            </li>
+
+                        </nav>
+
+                        <i class="fa-solid fa-bars tiles" style="display: none;" onclick="openMenuModal()"></i>
+                        <div class="modal">
+                            <i class="fa-solid fa-xmark close" style="display: none;" onclick="closeMenuModal()"></i>
+                            <nav class="menu">
+                                <li class="product-li">Trang chủ</li>
+                                <li class="product-li">Giới THiệu</li>
+                                <div class="product">
+                                    <li class="product-li setMenu">Sản Phẩm
+
+                                        <div class="product_list">
+                                            <div class="product_list-box">
+                                                <div class="commercial-products">
+                                                    <h3 class="products-title">Sản phẩm thương mại</h3>
+                                                    <ul class="product_list-ul">
+                                                        <li>Phần mềm Quản lý khách sạn</li>
+                                                        <li>Phần mềm Quản lý nhà hàng</li>
+                                                        <li>Phần mềm Quản lý quán Cà phê</li>
+                                                        <li>Phần mềm Quản lý khu vui chơi, giải trí</li>
+                                                        <li>Phần mềm Quản lý kho</li>
+                                                        <li>Phần mềm Quản lý Siêu thị</li>
+                                                        <li>Phần mềm Quản lý văn phòng phẩm</li>
+                                                        <li>Phần mềm Quản lý shop quần áo</li>
+                                                        <li>Phần mềm Quản lý phụ tùng ô tô</li>
+                                                        <li>Phần mềm chấm điểm CCHC cấp tỉnh, cấp huyện</li>
+                                                        <li>Phần mềm Quản lý hồ sơ Người có công</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="free-products">
+                                                    <h3 class="products-title">Sản phẩm miễn phí</h3>
+                                                    <ul class="product_list-ul">
+                                                        <li>Phần mềm Quản lý quán ăn</li>
+                                                        <li>Phần mềm Quản lý tạp hóa</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                                <li class="product-li">Tin tức</li>
+                                <li class="product-li">Hỗ trợ</li>
+                                <i class="fa-solid fa-magnifying-glass search " onclick="openIputSearch()">
+                                    <input type="text" id="search" placeholder="Tìm kiếm..." class="search-input" />
+                                </i>
+
+
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="header-contact-box">
+                        <div class="header-contact">
+                            <div class="header-contact__icon-wrapper">
+                                <i class="fa-solid fa-user-large header-contact__icon"></i>
+                                <p class="header-contact__label">Hotline</p>
+                            </div>
+                            <div class="header-contact__numbers">
+                                <p class="header-contact__number">913.289.125</p>
+                                <p class="header-contact__number">0962.688.616</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- content -->
+    <div class="navigation">
+        <div class="navigation__box">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">Trang chủ</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">sản phẩm </a>
+                </li>
+            </ul>
+            <h1 class="navigation-title">Phần mềm quản lý nhà hàng</h1>
+        </div>
+    </div>
+    <div class="container-detail">
+        <div class="content-detail-wrapper">
+            <div class="content-detail tab1">
+                <div class="post-meta">
+                    <!-- Group the first three elements in one div -->
+                    <div class="post-info">
+                        <span class="date"><i class="fa-regular fa-clock"></i>&nbsp 29/07/2024</span>
+                        <span class="views"><i class="fa-regular fa-eye"></i>&nbsp 683 lượt xem</span>
+                        <span class="author"><i class="fa-regular fa-user"></i>&nbspĐăng bởi: <strong>Trúc
+                                Việt</strong></span>
+                    </div>
+
+                    <!-- Group the two share elements in another div -->
+                    <div class="post-share">
+                        <a href="#" class="share-link"><i class="fa-regular fa-thumbs-up"></i>&nbsp thích</a>
+                        <a href="#" class="share-link">Chia sẻ</a>
+                    </div>
+                </div>
+
+
+                <div class="post-content">
+                    <p>Phần mềm quản lý nhà hàng tích hợp VietBiz là phần mềm quản lý được xây dựng cho việc quản lý nhà
+                        hàng, phục vụ bàn, quản lý kho, quản lý đơn,... Không chỉ giải quyết những vấn đề đau đầu trong
+                        nhà hàng mà còn tối ưu hóa hiệu quả hoạt động bán hàng cho điều hành viên, giảm thiểu các tác vụ
+                        thủ công, cho phép các nhân viên xử lý nhanh hơn, đảm bảo tốt hơn hoạt động và sự hài lòng của
+                        khách hàng.</p>
+                </div>
+
+                <div class="post-image">
+                    <img src="./img/product/item1.png" alt="Hình ảnh phần mềm quản lý nhà hàng">
+                </div>
+
+                <div class="post-section">
+                    <div class="section">
+                        <h2 class="section-title">1. Các chức năng chính</h2>
+                        <p class="section-description">
+                            Cung cấp các chức năng giúp quản lý nhà hàng có thể quản lý được các hoạt động kinh doanh
+                            thu chi, báo cáo theo những mốc thời gian, xem báo cáo mọi lúc mọi nơi, cấu hình thông tin
+                            nhà hàng...
+                        </p>
+                        <ul class="feature-list">
+                            <li class="feature-item">Cung cấp các giải pháp quản lý nhân sự, thực đơn, bàn ăn.</li>
+                            <li class="feature-item">Hỗ trợ nhân viên thu ngân dễ dàng, chính xác.</li>
+                            <li class="feature-item">Tương thích với nhiều thiết bị như smartphone, máy tính bảng, máy
+                                tính để bàn và có thể hoạt động Offline khi không có mạng.</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="section">
+                        <h2>2. Lợi ích dịch vụ</h2>
+                        <ul>
+                            <li>Tăng tốc độ phục vụ.</li>
+                            <li>Giảm sai sót do con người.</li>
+                            <li>Tăng tính chuyên nghiệp.</li>
+                            <li>Nâng cao hình ảnh nhà hàng.</li>
+                            <li>Giảm chi phí hoạt động.</li>
+                            <li>Tránh mất mát nguyên liệu.</li>
+                            <li>Nắm bắt nhanh số liệu kinh doanh.</li>
+                            <li>Nâng cao năng lực Quản trị.</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2>3. Đặc điểm, công nghệ nổi bật</h2>
+                        <p>Thiết kế hệ thống theo kiến trúc MicroServices:</p>
+                        <ul>
+                            <li>Hệ thống ứng dụng SPA (Single Page Application) trong thiết kế UI nâng cao trải nghiệm
+                                người dùng so với kiểu web truyền thống.</li>
+                            <li>Hỗ trợ chức năng phía client rất phong phú mà không yêu cầu tải lại trang khi người dùng
+                                thực hiện hành động hoặc điều hướng.</li>
+                            <li>Phản hồi thao tác nhanh hơn vì không phải tải lại trang một cách đầy đủ.</li>
+                            <li>Hỗ trợ cập nhật, lưu dữ liệu form hay văn bản.</li>
+                            <li>Thiết kế để chạy ở chế độ ngắt kết nối, model được cập nhật phía client và cuối cùng
+                                được đồng bộ hóa trở lại server khi kết nối được thiết lập lại.</li>
+                            <li>Giúp quản lý nhà hàng thiết lập máy chủ Offline tại nhà hàng và có thể sử dụng bình
+                                thường trong trường hợp kết nối bị mất mạng.</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2>4. Thông tin về giải thưởng, chứng nhận, tiêu chuẩn kỹ thuật</h2>
+                        <p>Giải vàng - Giải thưởng IT World Award 2021.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>5. Đối tượng khách hàng</h2>
+                        <p>Nhà hàng, quán ăn quy mô nhỏ đến lớn với đa dạng nhiều hình thức bán như đồ ăn, đồ uống, suất
+                            ăn tập thể.</p>
+                        <p>Để đăng ký dịch vụ online, mời quý khách <a href="#">ấn vào đây</a>.</p>
+                    </div>
+                </div>
+                <div class="registed-box">
+                    <button class="btn-register" onclick="openRegisted()">
+                        <b class="register-b">
+
+                            ĐĂNG KÝ DÙNG THỬ
+                        </b>
+                        <span class="icon"><img src="/img/regited.png" alt=""></span>
+                        <!-- Icon of a yellow hand -->
+                    </button>
+
+                </div>
+                <div class="modal_registed">
+                    <div class="registed-modal_box">
+                        <div class="form-container custom-form_container">
+                            <div class="icon-close" onclick="closeRegisted()">
+                                <i class="fa-sharp fa-solid fa-xmark" onclick="closeRegisted()"></i>
+                            </div>
+                                <h2 class="form-container__title">Dùng thử phần mềm</h2>
+                                <p class="form-container__subtitle">
+                                    Để trải nghiệm phần mềm quản lý chuyên nghiệp cùng Trúc Việt
+                                </p>
+                            <form class="form-container__form">
+                                <div class="form-container__input-group">
+                                    <input type="text" placeholder="Họ tên" class="form-container__input">
+                                    <div class="form-container__input-box custom-form_container_input-box">
+                                        <input type="text" placeholder="Số điện thoại" class="form-container__input" required>
+                                        <input type="text" placeholder="Tên cửa hàng" class="form-container__input" required>
+                                    </div>
+                                </div>
+                                <div class="form-container__checkbox">
+                                    <input type="checkbox" id="agree" class="form-container__checkbox-input" required>
+                                    <label for="agree" class="form-container__checkbox-label">
+                                        Tôi đã đọc và đồng ý với <a href="#">Chính sách bảo vệ dữ liệu cá nhân</a> và
+                                        <a href="#">Quy định sử dụng</a> của Trúc Việt
+                                    </label>
+                                </div>
+                                <button type="submit" class="form-container__submit">Đăng ký dùng thử</button>
+                                <p class="form-container__or">Hoặc: đăng ký nhanh bằng tài khoản</p>
+                                <div class="form-container__social-buttons">
+                                    <button class="form-container__social-button">
+                                        <i class="fa-brands fa-facebook fb"></i> Facebook
+                                    </button>
+                                    <button class="form-container__social-button">
+                                        <i class="fa-brands fa-google gg"></i> Google
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content-detail tab2">
+                <div class="highlighted-product-box">
+                    <h2 class="highlighted-product-title">SẢN PHẨM NỔI BẬT</h2>
+                </div>
+                <ul class="software-list">
+                    <li class="software-item"><a href="#" class="software-link"><i
+                                class="fa-solid fa-stop green"></i>&nbsp;Phần mềm Quản lý khách sạn</a></li>
+                    <li class="software-item"><a href="#" class="software-link"><i
+                                class="fa-solid fa-stop green"></i>&nbsp;Phần mềm Quản lý nhà hàng</a></li>
+                    <li class="software-item"><a href="#" class="software-link"><i
+                                class="fa-solid fa-stop green"></i>&nbsp;Phần mềm Quản lý quán Cà phê</a></li>
+                    <li class="software-item"><a href="#" class="software-link"><i
+                                class="fa-solid fa-stop green"></i>&nbsp;Phần mềm Quản lý siêu thị</a></li>
+                    <li class="software-item"><a href="#" class="software-link"><i
+                                class="fa-solid fa-stop green"></i>&nbsp;Phần mềm Quản lý kho</a></li>
+                </ul>
+                <div class="highlighted-product-box">
+                    <h2 class="highlighted-product-title">TIN TỨC MỚI</h2>
+                </div>
+                <div class="">
+                    <a href="" class="param-item">
+                        <img src="./img/product/item3.png" alt="" class="param-item__image">
+                        <div class="param-item_box">
+                            <p class="param-item__title">Danh sách các chuỗi cửa hàng thực
+                                phẩm sạch uy tín bạn nên lưu lại
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="param-item">
+                        <img src="./img/product/item3.png" alt="" class="param-item__image">
+                        <div class="param-item_box">
+                            <p class="param-item__title">Danh sách các chuỗi cửa hàng thực
+                                phẩm sạch uy tín bạn nên lưu lại
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="param-item">
+                        <img src="./img/product/item3.png" alt="" class="param-item__image">
+                        <div class="param-item_box">
+                            <p class="param-item__title">Danh sách các chuỗi cửa hàng thực
+                                phẩm sạch uy tín bạn nên lưu lại
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="highlighted-product-box">
+            <h2 class="highlighted-product-title">BÀI VIẾT LIÊN QUAN</h2>
+        </div>
+        <div class="list-param_detail">
+            <a href="" class="param-itemm">
+                <img src="/img/product/item2.png" alt="" class="param-item__image">
+                <div class="param-item_box"><b class="param-item__title">Phần mềm Quản lý Karaoke</b>
+                    <p class="param-item__description">Giải pháp quản lý quán hát là sự kết hợp hoàn hảo của phần mềm
+                        quản lý giúp cho việc quản lý được chính xác và triệt để.</p>
+                </div>
+            </a>
+            <a href="" class="param-itemm">
+                <img src="/img/product/item2.png" alt="" class="param-item__image">
+                <div class="param-item_box"><b class="param-item__title">Phần mềm Quản lý Karaoke</b>
+                    <p class="param-item__description">Giải pháp quản lý quán hát là sự kết hợp hoàn hảo của phần mềm
+                        quản lý giúp cho việc quản lý được chính xác và triệt để.</p>
+                </div>
+            </a>
+            <a href="" class="param-itemm">
+                <img src="/img/product/item2.png" alt="" class="param-item__image">
+                <div class="param-item_box"><b class="param-item__title">Phần mềm Quản lý Karaoke</b>
+                    <p class="param-item__description">Giải pháp quản lý quán hát là sự kết hợp hoàn hảo của phần mềm
+                        quản lý giúp cho việc quản lý được chính xác và triệt để.</p>
+                </div>
+            </a>
+            <a href="" class="param-itemm">
+                <img src="/img/product/item2.png" alt="" class="param-item__image">
+                <div class="param-item_box"><b class="param-item__title">Phần mềm Quản lý Karaoke</b>
+                    <p class="param-item__description">Giải pháp quản lý quán hát là sự kết hợp hoàn hảo của phần mềm
+                        quản lý giúp cho việc quản lý được chính xác và triệt để.</p>
+                </div>
+            </a>
+            <a href="" class="param-itemm">
+                <img src="/img/product/item2.png" alt="" class="param-item__image">
+                <div class="param-item_box"><b class="param-item__title">Phần mềm Quản lý Karaoke</b>
+                    <p class="param-item__description">Giải pháp quản lý quán hát là sự kết hợp hoàn hảo của phần mềm
+                        quản lý giúp cho việc quản lý được chính xác và triệt để.</p>
+                </div>
+            </a>
+            <a href="" class="param-itemm">
+                <img src="/img/product/item2.png" alt="" class="param-item__image">
+                <div class="param-item_box"><b class="param-item__title">Phần mềm Quản lý Karaoke</b>
+                    <p class="param-item__description">Giải pháp quản lý quán hát là sự kết hợp hoàn hảo của phần mềm
+                        quản lý giúp cho việc quản lý được chính xác và triệt để.</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <!--  -->
+    <div class="trySoftware">
+        <div class="trySoftware-box">
+            <img class="trySoftware-img" src="/img/trySoftware.png" alt="">
+            <div class="form-container">
+                <h2 class="form-container__title">Dùng thử phần mềm</h2>
+                <p class="form-container__subtitle">
+                    Để trải nghiệm phần mềm quản lý chuyên nghiệp cùng Trúc Việt
+                </p>
+                <form class="form-container__form">
+                    <div class="form-container__input-group">
+                        <input type="text" placeholder="Họ tên" class="form-container__input">
+                        <div class="form-container__input-box">
+                            <input type="text" placeholder="Số điện thoại" class="form-container__input" required>
+                            <input type="text" placeholder="Tên cửa hàng" class="form-container__input" required>
+                        </div>
+                    </div>
+                    <div class="form-container__checkbox">
+                        <input type="checkbox" id="agree" class="form-container__checkbox-input" required>
+                        <label for="agree" class="form-container__checkbox-label">
+                            Tôi đã đọc và đồng ý với <a href="#">Chính sách bảo vệ dữ liệu cá nhân</a> và
+                            <a href="#">Quy định sử dụng</a> của Trúc Việt
+                        </label>
+                    </div>
+                    <button type="submit" class="form-container__submit">Đăng ký dùng thử</button>
+                    <p class="form-container__or">Hoặc: đăng ký nhanh bằng tài khoản</p>
+                    <div class="form-container__social-buttons">
+                        <button class="form-container__social-button">
+                            <i class="fa-brands fa-facebook fb"></i> Facebook
+                        </button>
+                        <button class="form-container__social-button">
+                            <i class="fa-brands fa-google gg"></i> Google
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-title">
+            <div class="footer-title-box">
+                <div class="footer-title__item">
+                    <h2 class="footer-title__heading">PHẦN MỀM MÁY TÍNH TRÚC VIỆT</h2>
+                    <div class="footer-title__contact">
+                        <p class="footer-title__contact-item">Địa chỉ:</p>
+                        <p class="footer-title__contact-item">Tel:</p>
+                        <p class="footer-title__contact-item">Mail:</p>
+                        <p class="footer-title__contact-item">Website: trucviet.vn</p>
+                    </div>
+                    <div class="title__image-box">
+                        <img src="/img/footer/footer1.png" alt="" class="footer-title__image">
+                        <img src="/img/footer/footer2.png" alt="" class="footer-title__image2">
+                    </div>
+                </div>
+                <div class="footer-title__item">
+                    <h2 class="footer-title__heading">Sản phẩm</h2>
+                    <div class="footer-title__social-icons">
+                        <a href="#" class="software-list__item">Phần mềm Quản lý khách sạn</a>
+                        <a href="#" class="software-list__item">Phần mềm Quản lý nhà hàng</a>
+                        <a href="#" class="software-list__item">Phần mềm Quản lý quán Cà phê</a>
+                        <a href="#" class="software-list__item">Phần mềm Quản lý Karaoke</a>
+                        <a href="#" class="software-list__item">Phần mềm Quản lý khu vui chơi, giải trí</a>
+                        <a href="#" class="software-list__item">Phần mềm Quản lý kho</a>
+                        <a href="#" class="software-list__item">Phần mềm Quản lý Siêu thị</a>
+                        <a href="#" class="software-list__item">Phần mềm Quản lý văn phòng phẩm</a>
+                        <a href="#" class="software-list__item">Phần mềm Quản lý shop quần áo</a>
+                        <a href="#" class="software-list__item">Phần mềm Quản lý phụ tùng ô tô</a>
+                        <a href="#" class="software-list__item">Phần mềm chấm điểm CCHC cấp tỉnh, cấp huyện</a>
+                        <a href="#" class="software-list__item">Phần mềm Quản lý hồ sơ Người có công</a>
+                    </div>
+                </div>
+
+                <div class="footer-title__item">
+                    <div class="contact-section">
+                        <div class="contact-section__item">
+                            <b class="contact-section__title">Tư vấn bán hàng</b>
+                            <b class="contact-section__phone"><span>913.289.125</span></b>
+                            <b class="contact-section__phone"><span>0962.688.616</span></b>
+                        </div>
+                        <div class="contact-section__item">
+                            <b class="contact-section__title">Hỗ trợ sử dụng</b>
+                            <b class="contact-section__phone"><span>913.289.125</span></b>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer-title__item footer-title__copyright">Copyright © 2024 Truc Viet</div>
+        </div>
+
+    </footer>
+    <div class="iconSMS">
+        <img src="/img/iconSMS.png" alt="">
+    </div>
+    <i class="fa-regular fa-circle-up upPage" onclick="scrollToTop()"></i>
+
+    <script src="./trucViet.js"></script>
+</body>
+
+</html>
