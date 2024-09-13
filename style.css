@@ -45,10 +45,12 @@ body {
     width: 100%;
     height: 100%;
 }
-a{
+
+a {
     text-decoration: none;
     color: #000;
 }
+
 .activeMenu {
     border: 2px solid #A7EED2 !important;
     border-radius: 23px;
@@ -138,8 +140,8 @@ i.fa-solid.fa-magnifying-glass.nav-search {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
-    left: -88px;
-    top: 24px;
+    left: -107px;
+    top: 21px;
     display: none;
 }
 
@@ -166,15 +168,15 @@ i.fa-solid.fa-magnifying-glass.nav-search {
     display: none;
 }
 
-.setMenu {
+.dropdown {
     position: relative;
 }
 
-.product:hover .product_list {
+.dropdown:hover .dropdown-menu {
     display: block;
 }
 
-.product_list li {
+.dropdown-menu li {
     list-style-type: none;
 }
 
@@ -188,17 +190,17 @@ i.fa-solid.fa-magnifying-glass.nav-search {
     border-color: transparent transparent #f4efef transparent;
 }
 
-.product_list-box {
+.dropdown-content {
     display: flex;
 }
 
-.product_list-ul {
+.dropdown-list {
     display: flex;
     gap: 10px;
     flex-direction: column;
 }
 
-.products-title {
+.dropdown-title {
     margin-bottom: 10px;
 }
 
@@ -360,11 +362,19 @@ img.image-background {
     flex-direction: row;
     align-content: flex-end;
     align-items: flex-end;
-    color: #096F47;
+
 }
 
 .intro-tittle {
     font-size: 24px;
+}
+
+.intro-tittle a {
+    color: #096F47;
+}
+
+.software-tittle a {
+    color: #096F47;
 }
 
 .tittle_b {
@@ -550,6 +560,10 @@ ul.subnav li:hover {
     left: -2px;
 }
 
+.header-contact__number a {
+    color: #33D898;
+}
+
 .border-li::after {
     content: '';
     position: absolute;
@@ -599,8 +613,9 @@ ul.subnav li:hover {
     height: 81%;
     width: 100%;
 }
-.productinfomation-box{
-    background-color:#ECFBF5 ;
+
+.productinfomation-box {
+    background-color: #ECFBF5;
 }
 
 .product-menu .productinfomation_nav {
@@ -1275,7 +1290,7 @@ b.contact-section__title {
     font-size: 20px;
 }
 
-.contact-section__phone {
+.contact-section__phone a {
     font-size: 24px;
     color: #33D898;
 }
@@ -1284,6 +1299,10 @@ b.contact-section__title {
 .footer-title__contact,
 .footer-title__heading,
 .contact-section__title {
+    color: #fff;
+}
+
+.footer-title__contact a {
     color: #fff;
 }
 
@@ -1404,10 +1423,13 @@ ul.dropdown-list {
     content: "";
     position: absolute;
     right: 662px;
-    top: -50px;
+    top: -38px;
     border-width: 30px;
     border-style: solid;
     border-color: transparent transparent #f4efef transparent;
+}
+.dropdown-list a:hover{
+    color: #33D898;
 }
 
 .header-contact {
@@ -1427,8 +1449,14 @@ ul.dropdown-list {
 .header-contact-box {
     height: 66px;
 }
+
 .productinfomation {
     background-color: #ecfbf5;
+}
+
+.search {
+    position: relative;
+    cursor: pointer;
 }
 
 /* Điện thoại thông minh */
@@ -1460,7 +1488,7 @@ ul.dropdown-list {
         left: 30%;
     }
 
-    .header-nav nav .product-li {
+    .header-nav nav .nav-item {
         border-radius: 0;
         border-left: 10px solid rgba(0, 0, 0, 0);
         transition: background-color 0.3s ease;
@@ -1468,11 +1496,11 @@ ul.dropdown-list {
         width: 100%;
     }
 
-    .product {
+    .dropdown {
         width: 100%;
     }
 
-    .header-nav nav .product-li:hover {
+    .header-nav nav .nav-item:hover {
         border-left: 10px solid #ccc;
         border-radius: 0 !important;
         background-color: #ffffff;
@@ -1849,8 +1877,8 @@ ul.dropdown-list {
     }
 
     .form-container {
-       width: 95%;
-       margin-left: auto;
+        width: 95%;
+        margin-left: auto;
     }
 
     .form-container__social-button {
@@ -1883,7 +1911,7 @@ ul.dropdown-list {
         margin: 0;
     }
 
-    .product_list {
+    .dropdown-menu {
         /* width: 617px; */
         background: #fff;
         position: absolute;
@@ -1895,11 +1923,11 @@ ul.dropdown-list {
         left: 19%;
         top: 103%;
         display: none;
-        width: 143%;
+        width: auto;
     }
 
 
-    .product_list-box {
+    .dropdown-content {
         display: flex;
         flex-direction: column;
         gap: 33px;
@@ -1908,15 +1936,19 @@ ul.dropdown-list {
     .header-contact {
         display: none;
     }
+
     .intro-box__image--layer-25 {
         object-fit: cover;
     }
+
     .intro-box__image--layer-26 {
         object-fit: cover;
     }
+
     .intro-box__image--layer-27 {
         object-fit: cover;
     }
+
     .productbutton-next {
         width: 8% !important;
     }
@@ -1953,7 +1985,7 @@ ul.dropdown-list {
         left: 30%;
     }
 
-    .header-nav nav .product-li {
+    .header-nav nav .nav-item {
         border-radius: 0;
         border-left: 10px solid rgba(0, 0, 0, 0);
         transition: background-color 0.3s ease;
@@ -1961,11 +1993,11 @@ ul.dropdown-list {
         width: 100%;
     }
 
-    .product {
+    .dropdown {
         width: 100%;
     }
 
-    .header-nav nav .product-li:hover {
+    .header-nav nav .nav-item:hover {
         border-left: 10px solid #ccc;
         border-radius: 0 !important;
         background-color: #ffffff;
@@ -2234,8 +2266,9 @@ ul.dropdown-list {
         margin-left: 85px;
     }
 
-    .product_list {
-        width: 100%;
+    .dropdown-menu {
+        width: auto;
+        height: auto;
         background: #fff;
         position: absolute;
         z-index: 1000;
@@ -2243,18 +2276,19 @@ ul.dropdown-list {
         padding: 33px;
         border-radius: 14px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        left: 19%;
+        left: 18%;
         top: 103%;
         display: none;
+        margin-right: 12px;
     }
 
-    .product_list-box {
+    .dropdown-content {
         display: flex;
         flex-direction: column;
         gap: 33px;
     }
 
-    .product_list::after {
+    .dropdown-menu::after {
         right: 379px;
         top: -57px;
     }
@@ -2272,36 +2306,45 @@ ul.dropdown-list {
     .header-contact {
         display: none;
     }
-    .softwareBenefits-container{
+
+    .softwareBenefits-container {
         grid-template-columns: 1fr;
     }
-    .softwareBenefits-image{
+
+    .softwareBenefits-image {
         width: 100%;
     }
+
     .softwareBenefits-des_box .item {
         position: static;
         display: flex;
         gap: 18px;
     }
-    .softwareBenefits{
+
+    .softwareBenefits {
         height: 100%;
     }
+
     .customers-slide__text {
         padding-left: 20px;
         font-size: 10px;
     }
+
     .customers-slide__item.slick-slide {
         padding-bottom: 20px;
     }
+
     .setCustom {
         width: 5% !important;
         right: 5%;
         top: 79px !important;
     }
+
     .up {
         top: 38% !important;
         left: 42px !important;
     }
+
     .form-container {
         width: 82%;
         margin: 0 auto;
@@ -2340,7 +2383,7 @@ ul.dropdown-list {
         left: 30%;
     }
 
-    .header-nav nav .product-li {
+    .header-nav nav .nav-item {
         border-radius: 0;
         border-left: 10px solid rgba(0, 0, 0, 0);
         transition: background-color 0.3s ease;
@@ -2352,7 +2395,7 @@ ul.dropdown-list {
         width: 100%;
     }
 
-    .header-nav nav .product-li:hover {
+    .header-nav nav .nav-item:hover {
         border-left: 10px solid #ccc;
         border-radius: 0 !important;
         background-color: #ffffff;
@@ -2581,7 +2624,7 @@ ul.dropdown-list {
         width: 41%;
     }
 
-    .product_list {
+    .dropdown-menu {
         /* width: 617px; */
         background: #fff;
         position: absolute;
@@ -2596,7 +2639,7 @@ ul.dropdown-list {
     }
 
 
-    .product_list-box {
+    .dropdown-content {
         display: flex;
         flex-direction: column;
         gap: 33px;
@@ -2629,8 +2672,9 @@ ul.dropdown-list {
         margin: 0 10px;
     }
 
-    .product_list {
+    .dropdown-menu {
         width: 376px;
+        height: auto;
     }
 
 }
@@ -2665,7 +2709,7 @@ ul.dropdown-list {
         left: 40%;
     }
 
-    .header-nav nav .product-li {
+    .header-nav nav .nav-item {
         border-radius: 0;
         border-left: 10px solid rgba(0, 0, 0, 0);
         transition: background-color 0.3s ease;
@@ -2673,11 +2717,11 @@ ul.dropdown-list {
         width: 100%;
     }
 
-    .product {
+    .modal .dropdown {
         width: 100%;
     }
 
-    .header-nav nav .product-li:hover {
+    .header-nav nav .nav-item:hover {
         border-left: 10px solid #ccc;
         border-radius: 0 !important;
         background-color: #ffffff;
@@ -2845,9 +2889,9 @@ ul.dropdown-list {
         left: 59%;
     }
 
-    .product_list {
-        /* width: 617px; */
-        height: 600px;
+    .dropdown-menu {
+        width: auto;
+        height: auto;
         background: #fff;
         position: absolute;
         z-index: 1000;
@@ -2861,7 +2905,7 @@ ul.dropdown-list {
     }
 
 
-    .product_list-box {
+    .dropdown-content {
         display: flex;
         flex-direction: column;
         gap: 33px;
@@ -2900,11 +2944,11 @@ ul.dropdown-list {
         font-size: 12px;
     }
 
-    .product_list {
+    .nav-item {
         width: 477px;
     }
 
-    .product_list::after {
+    .modal .nav-item::after {
         right: 405px;
         top: -54px;
     }

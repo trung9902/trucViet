@@ -1,4 +1,3 @@
-let upPage = document.querySelector(".upPage");
 let productNav = document.querySelector(".productinfomation-container");
 let ModalMenu = document.querySelector(".modal");
 let Menu = document.querySelector(".main-menu");
@@ -6,20 +5,37 @@ let setShow = document.getElementsByClassName("setShow");
 let search = document.querySelector(".search-input");
 let modalRegisted = document.querySelector(".modal_registed");
 console.log(modalRegisted);
+let upPage = document.querySelector(".upPage");
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+let openIputSearch = () => {
+  let search = document.querySelector(".search-input");
+  let isContentVisible = false;
+  if (!isContentVisible) {
+    search.style.display = "block";
+    console.log(isContentVisible);
+  } else {
+    search.style.display = "none";
+    console.log("ssss");
+  }
+};
 let closeRegisted = () => {
   if (modalRegisted) {
     modalRegisted.style.display = "none"; // Ẩn phần tử đầu tiên tìm thấy
   }
-  console.log('close');
+  console.log("close");
 };
 let openRegisted = () => {
   if (modalRegisted) {
     modalRegisted.style.display = "block"; // Ẩn phần tử đầu tiên tìm thấy
     // modalRegisted.classList.add("modal_hidden");
   }
-  console.log('close');
+  console.log("close");
 };
-
 
 console.log(search);
 
@@ -227,7 +243,7 @@ let loadContent = (number) => {
 let openMenuModal = () => {
   ModalMenu.style.display = "block";
 };
-var closeMenuModal = () => {
+let closeMenuModal = () => {
   ModalMenu.style.display = "none";
 };
 function checkScreenSize() {
@@ -238,16 +254,18 @@ function checkScreenSize() {
     ModalMenu.style.display = "none";
   }
 }
-let openIputSearch = () => {
-  let isContentVisible = false;
-  if (!isContentVisible) {
-    search.style.display = "block";
-    console.log(isContentVisible);
-  } else {
-    search.style.display = "none";
-    console.log("ssss");
-  }
-};
+// let openIputSearch = () => {
+//   console.log('sss');
+
+//   let isContentVisible = false;
+//   if (!isContentVisible) {
+//     search.style.display = "block";
+//     console.log(isContentVisible);
+//   } else {
+//     search.style.display = "none";
+//     console.log("ssss");
+//   }
+// };
 checkScreenSize();
 window.addEventListener("resize", checkScreenSize);
 
@@ -330,9 +348,9 @@ let listProduct = () => {
   listParam.innerHTML = runView.join("");
 };
 listProduct();
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
+// const scrollToTop = () => {
+//   window.scrollTo({
+//     top: 0,
+//     behavior: "smooth",
+//   });
+// };

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>support</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="./support.css">
     <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -19,97 +19,103 @@
             <div class="row">
                 <div class="header-box">
                     <div class="header-logo">
-                        <a href="">
+                        <a href="/index.html">
                             <img class="logo_img" src="./img/logo.png" alt="">
 
                         </a>
                     </div>
                     <div class="header-nav">
                         <nav class="main-menu">
-                            <li class="nav-item">Trang chủ</li>
-                            <li class="nav-item">Giới Thiệu</li>
-                            <div class="nav-products">
-                                <li class="nav-item dropdown">Sản Phẩm
+
+                            <li class="nav-item "><a href="/index.html">Trang chủ</a></li>
+                            <li class="nav-item"><a href="">Giới Thiệu</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="/product.html">Sản Phẩm</a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-content">
+                                        <div class="commercial-items">
+                                            <h3 class="dropdown-title">Sản phẩm thương mại</h3>
+                                            <ul class="dropdown-list">
+                                                <li><a href="">Phần mềm Quản lý khách sạn</a></li>
+                                                <li><a href="">Phần mềm Quản lý nhà hàng</a></li>
+                                                <li><a href="">Phần mềm Quản lý quán Cà phê</a></li>
+                                                <li><a href="">Phần mềm Quản lý khu vui chơi, giải trí</a></li>
+                                                <li><a href="">Phần mềm Quản lý kho</a></li>
+                                                <li><a href="">Phần mềm Quản lý Siêu thị</a></li>
+                                                <li><a href="">Phần mềm Quản lý văn phòng phẩm</a></li>
+                                                <li><a href="">Phần mềm Quản lý shop quần áo</a></li>
+                                                <li><a href="">Phần mềm Quản lý phụ tùng ô tô</a></li>
+                                                <li><a href="">Phần mềm chấm điểm CCHC cấp tỉnh, cấp huyện</a></li>
+                                                <li><a href="">Phần mềm Quản lý hồ sơ Người có công</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="free-items">
+                                            <h3 class="dropdown-title">Sản phẩm miễn phí</h3>
+                                            <ul class="dropdown-list">
+                                                <li><a href="">Phần mềm Quản lý quán ăn</a></li>
+                                                <li><a href="">Phần mềm Quản lý tạp hóa</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="">Tin tức</a></li>
+                            <li class="nav-item activeMenu"><a href="/support.html">Hỗ trợ</a></li>
+                            <li class="nav-search">
+                                <div class="search" onclick="openIputSearch()">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input type="text" id="search" placeholder="Tìm kiếm..." class="search-input" />
+                                </div>
+
+                            </li>
+
+                        </nav>
+
+
+                        <i class="fa-solid fa-bars tiles" style="display: none;" onclick="openMenuModal()"></i>
+                        <div class="modal">
+                            <i class="fa-solid fa-xmark close" style="display: none;" onclick="closeMenuModal()"></i>
+                            <nav class="main-menu">
+
+                                <li class="nav-item activeMenu"><a href="/index.html">Trang chủ</a></li>
+                                <li class="nav-item"><a href="">Giới Thiệu</a></li>
+                                <li class="nav-item dropdown">
+                                    <a href="/product.html">Sản Phẩm</a>
                                     <div class="dropdown-menu">
                                         <div class="dropdown-content">
                                             <div class="commercial-items">
                                                 <h3 class="dropdown-title">Sản phẩm thương mại</h3>
                                                 <ul class="dropdown-list">
-                                                    <li>Phần mềm Quản lý khách sạn</li>
-                                                    <li>Phần mềm Quản lý nhà hàng</li>
-                                                    <li>Phần mềm Quản lý quán Cà phê</li>
-                                                    <li>Phần mềm Quản lý khu vui chơi, giải trí</li>
-                                                    <li>Phần mềm Quản lý kho</li>
-                                                    <li>Phần mềm Quản lý Siêu thị</li>
-                                                    <li>Phần mềm Quản lý văn phòng phẩm</li>
-                                                    <li>Phần mềm Quản lý shop quần áo</li>
-                                                    <li>Phần mềm Quản lý phụ tùng ô tô</li>
-                                                    <li>Phần mềm chấm điểm CCHC cấp tỉnh, cấp huyện</li>
-                                                    <li>Phần mềm Quản lý hồ sơ Người có công</li>
+                                                    <li><a href="">Phần mềm Quản lý khách sạn</a></li>
+                                                    <li><a href="">Phần mềm Quản lý nhà hàng</a></li>
+                                                    <li><a href="">Phần mềm Quản lý quán Cà phê</a></li>
+                                                    <li><a href="">Phần mềm Quản lý khu vui chơi, giải trí</a></li>
+                                                    <li><a href="">Phần mềm Quản lý kho</a></li>
+                                                    <li><a href="">Phần mềm Quản lý Siêu thị</a></li>
+                                                    <li><a href="">Phần mềm Quản lý văn phòng phẩm</a></li>
+                                                    <li><a href="">Phần mềm Quản lý shop quần áo</a></li>
+                                                    <li><a href="">Phần mềm Quản lý phụ tùng ô tô</a></li>
+                                                    <li><a href="">Phần mềm chấm điểm CCHC cấp tỉnh, cấp huyện</a></li>
+                                                    <li><a href="">Phần mềm Quản lý hồ sơ Người có công</a></li>
                                                 </ul>
                                             </div>
                                             <div class="free-items">
                                                 <h3 class="dropdown-title">Sản phẩm miễn phí</h3>
                                                 <ul class="dropdown-list">
-                                                    <li>Phần mềm Quản lý quán ăn</li>
-                                                    <li>Phần mềm Quản lý tạp hóa</li>
+                                                    <li><a href="">Phần mềm Quản lý quán ăn</a></li>
+                                                    <li><a href="">Phần mềm Quản lý tạp hóa</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                            </div>
-                            <li class="nav-item">Tin tức</li>
-                            <li class="nav-item activeMenu">Hỗ trợ</li>
-                            <i class="fa-solid fa-magnifying-glass nav-search" onclick="openIputSearch()">
-                                <input type="text" id="search" placeholder="Tìm kiếm..." class="search-input" />
-                            </i>
-                        </nav>
-
-                        <i class="fa-solid fa-bars tiles" style="display: none;" onclick="openMenuModal()"></i>
-                        <div class="modal">
-                            <i class="fa-solid fa-xmark close" style="display: none;" onclick="closeMenuModal()"></i>
-                            <nav class="menu">
-                                <li class="product-li">Trang chủ</li>
-                                <li class="product-li">Giới THiệu</li>
-                                <div class="product">
-                                    <li class="product-li setMenu">Sản Phẩm
-
-                                        <div class="product_list">
-                                            <div class="product_list-box">
-                                                <div class="commercial-products">
-                                                    <h3 class="products-title">Sản phẩm thương mại</h3>
-                                                    <ul class="product_list-ul">
-                                                        <li>Phần mềm Quản lý khách sạn</li>
-                                                        <li>Phần mềm Quản lý nhà hàng</li>
-                                                        <li>Phần mềm Quản lý quán Cà phê</li>
-                                                        <li>Phần mềm Quản lý khu vui chơi, giải trí</li>
-                                                        <li>Phần mềm Quản lý kho</li>
-                                                        <li>Phần mềm Quản lý Siêu thị</li>
-                                                        <li>Phần mềm Quản lý văn phòng phẩm</li>
-                                                        <li>Phần mềm Quản lý shop quần áo</li>
-                                                        <li>Phần mềm Quản lý phụ tùng ô tô</li>
-                                                        <li>Phần mềm chấm điểm CCHC cấp tỉnh, cấp huyện</li>
-                                                        <li>Phần mềm Quản lý hồ sơ Người có công</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="free-products">
-                                                    <h3 class="products-title">Sản phẩm miễn phí</h3>
-                                                    <ul class="product_list-ul">
-                                                        <li>Phần mềm Quản lý quán ăn</li>
-                                                        <li>Phần mềm Quản lý tạp hóa</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </div>
-                                <li class="product-li">Tin tức</li>
-                                <li class="product-li">Hỗ trợ</li>
-                                <i class="fa-solid fa-magnifying-glass search " onclick="openIputSearch()">
-                                    <input type="text" id="search" placeholder="Tìm kiếm..." class="search-input" />
-                                </i>
-
+                                <li class="nav-item"><a href="">Tin tức</a></li>
+                                <li class="nav-item"><a href="/support.html">Hỗ trợ</a></li>
+                                <li class="nav-search">
+                                    <i class="fa-solid fa-magnifying-glass" onclick="openIputSearch()">
+                                        <input type="text" id="search" placeholder="Tìm kiếm..." class="search-input" />
+                                    </i>
+                                </li>
 
                             </nav>
                         </div>
@@ -117,12 +123,20 @@
                     <div class="header-contact-box">
                         <div class="header-contact">
                             <div class="header-contact__icon-wrapper">
-                                <i class="fa-solid fa-user-large header-contact__icon"></i>
+                                <img src="/img/icon-hotline.png" class=" header-contact__icon">
+                                <!-- <img src="" alt=""> -->
                                 <p class="header-contact__label">Hotline</p>
                             </div>
                             <div class="header-contact__numbers">
-                                <p class="header-contact__number">913.289.125</p>
-                                <p class="header-contact__number">0962.688.616</p>
+                                <p class="header-contact__number"><a href="tel">
+
+                                        913.289.125
+                                    </a>
+                                </p>
+                                <p class="header-contact__number"><a href="tel">
+
+                                        0962.688.616
+                                    </a></p>
                             </div>
                         </div>
                     </div>
@@ -319,12 +333,24 @@
         <div class="footer-title">
             <div class="footer-title-box">
                 <div class="footer-title__item">
-                    <h2 class="footer-title__heading">PHẦN MỀM MÁY TÍNH TRÚC VIỆT</h2>
+                    <a href="">
+                        <h2 class="footer-title__heading"><a href="">PHẦN MỀM MÁY TÍNH TRÚC VIỆT</a></h2>
+                    </a>
                     <div class="footer-title__contact">
-                        <p class="footer-title__contact-item">Địa chỉ:</p>
-                        <p class="footer-title__contact-item">Tel:</p>
-                        <p class="footer-title__contact-item">Mail:</p>
-                        <p class="footer-title__contact-item">Website: trucviet.vn</p>
+                        <!-- Địa chỉ -->
+                        <p class="footer-title__contact-item">Địa chỉ: Số 123 Đường ABC, Quận XYZ, Thành phố HCM</p>
+
+                        <!-- Số điện thoại -->
+                        <p class="footer-title__contact-item">Tel: <a href="tel:123456789">123456789</a></p>
+
+                        <!-- Email -->
+                        <p class="footer-title__contact-item">Mail: <a
+                                href="mailto:example@example.com">example@example.com</a></p>
+
+                        <!-- Website -->
+                        <p class="footer-title__contact-item">Website: <a href="https://trucviet.vn"
+                                target="_blank">trucviet.vn</a></p>
+
                     </div>
                     <div class="title__image-box">
                         <img src="/img/footer/footer1.png" alt="" class="footer-title__image">
@@ -353,12 +379,17 @@
                     <div class="contact-section">
                         <div class="contact-section__item">
                             <b class="contact-section__title">Tư vấn bán hàng</b>
-                            <b class="contact-section__phone"><span>913.289.125</span></b>
-                            <b class="contact-section__phone"><span>0962.688.616</span></b>
+                            <b class="contact-section__phone"><a
+                                    href="tel:913289125"><span>913.289.125</span></a></b>
+                            <b class="contact-section__phone"><a
+                                    href="tel:0962688616"><span>0962.688.616</span></a></b>
+
                         </div>
                         <div class="contact-section__item">
                             <b class="contact-section__title">Hỗ trợ sử dụng</b>
-                            <b class="contact-section__phone"><span>913.289.125</span></b>
+                            <b class="contact-section__phone"><a
+                                    href="tel:913289125"><span>913.289.125</span></a></b>
+
                         </div>
                     </div>
 
