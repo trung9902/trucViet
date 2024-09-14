@@ -13,10 +13,12 @@
     margin-top: 101px;
     background-position: top;
 }
+
 h1.navigation-title {
     margin-top: 10px;
     text-transform: uppercase;
 }
+
 .navigation-title::after {
     content: '';
     position: absolute;
@@ -33,20 +35,24 @@ h1.navigation-title {
     margin: 0 auto;
     position: relative;
 }
+
 ul.navigation__list {
     display: flex;
     gap: 5px;
 }
+
 a.navigation__link {
     color: #fff;
 }
-.navigation__item + .navigation__item::before{
+
+.navigation__item+.navigation__item::before {
     content: '/';
 }
+
 .container-detail {
     width: 1200px;
     max-width: 100%;
-    margin: 119px auto;
+    margin: 6px auto;
     padding: 20px;
 }
 
@@ -54,6 +60,7 @@ a.navigation__link {
     display: flex;
     /* grid-template-columns: 65% 35%; */
     gap: 60px;
+    margin-bottom: 85px;
 }
 
 .tab1 {
@@ -89,6 +96,7 @@ a.share-link {
 
 .post-image img {
     width: 100%;
+    padding: 35px 0;
 }
 
 button.btn-register {
@@ -126,11 +134,15 @@ span.icon {
 
 .register-b {
     padding: 0 15px 0 15px;
+    font-family: 'avo';
 }
+
 
 a.software-link {
     text-decoration: none;
     color: #000;
+    display: flex;
+    align-items: center;
 }
 
 .software-list {
@@ -148,7 +160,7 @@ li.software-item {
 }
 
 i.fa-solid.fa-stop.green {
-    font-size: 11px;
+    font-size: 7px;
 }
 
 h2.highlighted-product-title {
@@ -272,12 +284,15 @@ h2.highlighted-product-title_news {
     .custom-form_container {
         width: 57%;
     }
+
     .post-meta {
         flex-direction: column;
     }
+
     .post-share {
         margin-top: 6px;
     }
+
     .post-info {
         display: flex;
         gap: 21px;
@@ -290,6 +305,7 @@ h2.highlighted-product-title_news {
     .post-meta {
         flex-direction: column;
     }
+
     .post-share {
         margin-top: 6px;
     }
@@ -308,10 +324,12 @@ h2.highlighted-product-title_news {
     .tab2 {
         width: 100% !important;
     }
+
     .custom-form_container {
         width: 97%;
     }
 }
+
 @media (max-width: 376px) {
     .trySoftware {
         height: 117% !important;

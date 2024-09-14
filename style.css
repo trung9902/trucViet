@@ -287,6 +287,7 @@ img.image-background {
     display: block;
     border-radius: 50% 42% 16% 44%;
     box-shadow: -19px -20px 0px -8px rgb(215 246 234);
+    object-fit: cover;
 }
 
 .intro-box__layer-item26 {
@@ -472,7 +473,7 @@ img.Layer-27 {
     width: 100%;
     height: 67%;
     position: relative;
-    margin-top: 200px;
+    margin-top: 57px;
 }
 
 .setDisplay {
@@ -697,9 +698,9 @@ ul.slick-dots li {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 700px;
+    height: 724px;
     position: relative;
-    margin-top: 20px;
+    margin-top: 65px;
 }
 
 .softwareBenefits-tittle {
@@ -725,7 +726,7 @@ ul.slick-dots li {
     position: absolute;
     top: 75px;
     left: 13.5%;
-    width: 41%;
+    width: 39%;
 }
 
 .software-title_box {
@@ -738,10 +739,10 @@ ul.slick-dots li {
 .softwareBenefits-des_box {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    top: 42%;
+    top: 45%;
     position: absolute;
-    gap: 51px;
-    left: 58%;
+    gap: 60px;
+    left: 49%;
     font-weight: 800;
 }
 
@@ -759,7 +760,7 @@ p.item2 {
 
 /* customers */
 .customers {
-    height: 1000px;
+    height: 931px;
 }
 
 .customers_box {
@@ -770,7 +771,7 @@ p.item2 {
     width: 100%;
     height: 2000px;
     position: relative;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 
 /* .couting {
@@ -994,11 +995,11 @@ button.slick-next.pull-right.slick-arrow {
 }
 
 .setVideo-left {
-    left: 97%;
+    right: 97%;
 }
 
 .setVideo-right {
-    left: -16px;
+    right: -16px;
 }
 
 /* news */
@@ -1067,7 +1068,7 @@ p.news-slide__title {
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 26px 26px 0 0;
     text-align: center;
     margin-left: 13px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -1207,6 +1208,7 @@ p.news-slide__title {
     width: 100%;
     height: 371px;
     background-color: #33D898;
+    margin-top: 143px;
 }
 
 /* footer */
@@ -1273,6 +1275,9 @@ img.footer-title__image {
 
 h2.footer-title__heading {
     padding-bottom: 16px;
+}
+.footer-title__heading a{
+    color: #fff;
 }
 
 .contact-section {
@@ -1428,7 +1433,8 @@ ul.dropdown-list {
     border-style: solid;
     border-color: transparent transparent #f4efef transparent;
 }
-.dropdown-list a:hover{
+
+.dropdown-list a:hover {
     color: #33D898;
 }
 
@@ -3109,7 +3115,7 @@ ul.dropdown-list {
         width: 1200px;
         max-width: 100%;
         margin: 0 auto;
-        margin-top: 10%;
+        margin-top: 16%;
         padding-top: 43px;
     }
 
@@ -3134,10 +3140,10 @@ ul.dropdown-list {
     .softwareBenefits-des_box {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        top: 44%;
+        top: 45%;
         position: absolute;
         gap: 60px;
-        left: 53%;
+        left: 49%;
         font-weight: 800;
     }
 
