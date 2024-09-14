@@ -1010,6 +1010,9 @@ button.slick-next.pull-right.slick-arrow {
     margin: 0 auto;
     margin-top: 10%;
 }
+.news-box {
+    background-color: #ecfbf5;
+}
 
 .news-title {
     text-align: center;
