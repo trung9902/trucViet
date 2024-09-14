@@ -338,7 +338,7 @@ const products = [
 let listProduct = () => {
   let listParam = document.querySelector(".list-param");
   let runView = products.map((item) => {
-    return `     <a href="href="/detail.html"" class="param-item">
+    return `     <a href="/detail.html" class="param-item">
                 <img src="${item?.img}" alt="" class="param-item__image">
                  <div class="param-item_box"><b class="param-item__title">${item.tittle}</b>
                 <p class="param-item__description">${item.description}</p></div>
