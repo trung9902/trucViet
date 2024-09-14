@@ -2604,16 +2604,16 @@ ul.dropdown-list {
         position: absolute;
         top: 191px;
         left: 0.5%;
-        width: 55%;
+        width: 59%;
     }
 
     .softwareBenefits-des_box {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        top: 45%;
+        top: 48%;
         position: absolute;
-        gap: 9px;
-        left: 52%;
+        gap: 1px;
+        left: 56%;
     }
 
     .video-instruct__play-iconthumb2 {
@@ -2892,9 +2892,9 @@ ul.dropdown-list {
     .softwareBenefits-des_box {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        top: 41%;
+        top: 46%;
         position: absolute;
-        gap: 29px;
+        gap: 20px;
         left: 59%;
     }
 
@@ -3042,10 +3042,10 @@ ul.dropdown-list {
     }
 
     .softwareBenefits-des_box {
-        top: 40%;
+        top: 42%;
         position: absolute;
-        gap: 40px;
-        left: 53%;
+        gap: 37px;
+        left: 52%;
     }
 
     .setVideo-left {
