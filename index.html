@@ -30,6 +30,7 @@
                             <li class="nav-item"><a href="">Giới Thiệu</a></li>
                             <li class="nav-item dropdown">
                                 <a href="/product.html">Sản Phẩm</a>
+
                                 <div class="dropdown-menu">
                                     <div class="dropdown-content">
                                         <div class="commercial-items">
@@ -76,10 +77,14 @@
                             <i class="fa-solid fa-xmark close" style="display: none;" onclick="closeMenuModal()"></i>
                             <nav class="main-menu">
 
-                                <li class="nav-item activeMenu"><a href="/index.html">Trang chủ</a></li>
+                                <li class="nav-item"><a href="/index.html">Trang chủ</a></li>
                                 <li class="nav-item"><a href="">Giới Thiệu</a></li>
-                                <li class="nav-item dropdown">
-                                    <a href="/product.html">Sản Phẩm</a>
+                                <li class="nav-item dropdown menumobieleve " onclick="openMenuleve2()">
+                                    <div class="dropdown-box">
+                                        <a href="/product.html">Sản Phẩm</a>
+                                        <!-- <i class="fa-solid fa-chevron-down dowup"></i> -->
+                                        <i class="fa-solid fa-chevron-up dowup"></i>
+                                    </div>
                                     <div class="dropdown-menu">
                                         <div class="dropdown-content">
                                             <div class="commercial-items">
@@ -215,7 +220,8 @@
                     <div class="product-title_box">
                         <div class="product-box">
                             <img src="/img/intro1.png" alt="">
-                            <p class="intro-tittle"><a href="">Sản phẩm <br><b class="tittle_b">Phần mềm quản lý</b></a></p>
+                            <p class="intro-tittle"><a href="">Sản phẩm <br><b class="tittle_b">Phần mềm quản lý</b></a>
+                            </p>
                             <img src="/img/intro2.png" alt="">
                         </div>
                         <div class="productinfomation_nav">
@@ -271,14 +277,16 @@
             <div class="softwareBenefits">
                 <div class="software-title_box">
                     <img src="/img/intro1.png" alt="">
-                    <p class="software-tittle"><a href="">Lợi ích <br><b class="tittle_b">PHẦN MỀM QUẢN LÝ TRÚC VIỆT MANG
-                            LẠI</b></a></p>
+                    <p class="software-tittle"><a href="">Lợi ích <br><b class="tittle_b">PHẦN MỀM QUẢN LÝ TRÚC VIỆT
+                                MANG
+                                LẠI</b></a></p>
                     <img src="/img/intro2.png" alt="">
                 </div>
                 <div class="softwareBenefits-container">
                     <div class="softwareBenefits-image">
                         <img src="./img/gỉl-yello.png" alt="">
                     </div>
+                    <img src="/img/nav-ct.png" class="softwareBenefits-image-custom" alt="">
                     <div class="softwareBenefits-des_box">
                         <p class="item1 item"><i class="fa-solid fa-right-long setShow"></i>Giao diện dễ sử dụng, thao
                             tác linh hoạt trên PC, Mobile App </p>
@@ -421,7 +429,7 @@
                     <div class="introduce-title_box">
                         <img src="/img/intro1.png" alt="" class="">
                         <p class="intro-tittle"><a href="">Video <br><b class="tittle_b">Hướng
-                                Dẫn</b></a></p>
+                                    Dẫn</b></a></p>
                         <img src="/img/intro2.png" alt="" class="">
                     </div>
                     <p class="instruct-des"><i class="fa-solid fa-forward green"></i>&nbsp Giải pháp quản lý cho mọi
@@ -441,64 +449,64 @@
                 </div>
             </div>
             <!-- news -->
-           <div class="news-box">
-            <div class="news">
-                <div class="introduce-title_box news-title">
-                    <img src="/img/intro1.png" alt="" class="">
-                    <p class="intro-tittle"><a href="">Trúc Việt<br><b class="tittle_b">Tin Tức</b></a></p>
-                    <img src="/img/intro2.png" alt="" class="">
+            <div class="news-box">
+                <div class="news">
+                    <div class="introduce-title_box news-title">
+                        <img src="/img/intro1.png" alt="" class="">
+                        <p class="intro-tittle"><a href="">Trúc Việt<br><b class="tittle_b">Tin Tức</b></a></p>
+                        <img src="/img/intro2.png" alt="" class="">
+                    </div>
+                    <div class="news-slide">
+                        <div class="news-slide__item">
+                            <img src="/img/news/news1.png" alt="" class="news-slide__image">
+                            <p class="news-slide__title">
+                                <b>Danh sách các chuỗi cửa hàng thực phẩm sạch uy tín bạn nên lưu lại</b>
+                                <br><br>
+                                27/05/2024 14:25:23
+
+                            </p>
+
+                        </div>
+                        <div class="news-slide__item">
+                            <img src="/img/news/news2.png" alt="" class="news-slide__image">
+                            <p class="news-slide__title">
+                                <b> Ngăn kéo đựng tiền dành cho quầy thu ngân – quản lý tiền mặt an toàn, chính xác</b>
+                                <br><br>
+                                27/05/2024 14:25:23
+
+
+
+                            </p>
+
+                        </div>
+                        <div class="news-slide__item">
+                            <img src="/img/news/news3.png" alt="" class="news-slide__image">
+                            <p class="news-slide__title"><b>4 Mẹo bán hàng tăng doanh thu khủng mùa Black Friday giúp
+                                    chủ
+                                    shop
+                                    kiếm bộn tiền</b>
+
+                                <br><br>
+                                27/05/2024 14:25:23
+
+                            </p>
+                        </div>
+                        <div class="news-slide__item">
+                            <img src="/img/news/news2.png" alt="" class="news-slide__image">
+                            <p class="news-slide__title">
+                                <b> Ngăn kéo đựng tiền dành cho quầy thu ngân – quản lý tiền mặt an toàn, chính xác</b>
+                                <br><br>
+                                27/05/2024 14:25:23
+
+
+
+                            </p>
+                        </div>
+                    </div>
+
+
                 </div>
-                <div class="news-slide">
-                    <div class="news-slide__item">
-                        <img src="/img/news/news1.png" alt="" class="news-slide__image">
-                        <p class="news-slide__title">
-                            <b>Danh sách các chuỗi cửa hàng thực phẩm sạch uy tín bạn nên lưu lại</b>
-                            <br><br>
-                            27/05/2024 14:25:23
-
-                        </p>
-
-                    </div>
-                    <div class="news-slide__item">
-                        <img src="/img/news/news2.png" alt="" class="news-slide__image">
-                        <p class="news-slide__title">
-                            <b> Ngăn kéo đựng tiền dành cho quầy thu ngân – quản lý tiền mặt an toàn, chính xác</b>
-                            <br><br>
-                            27/05/2024 14:25:23
-
-
-
-                        </p>
-
-                    </div>
-                    <div class="news-slide__item">
-                        <img src="/img/news/news3.png" alt="" class="news-slide__image">
-                        <p class="news-slide__title"><b>4 Mẹo bán hàng tăng doanh thu khủng mùa Black Friday giúp
-                                chủ
-                                shop
-                                kiếm bộn tiền</b>
-
-                            <br><br>
-                            27/05/2024 14:25:23
-
-                        </p>
-                    </div>
-                    <div class="news-slide__item">
-                        <img src="/img/news/news2.png" alt="" class="news-slide__image">
-                        <p class="news-slide__title">
-                            <b> Ngăn kéo đựng tiền dành cho quầy thu ngân – quản lý tiền mặt an toàn, chính xác</b>
-                            <br><br>
-                            27/05/2024 14:25:23
-
-
-
-                        </p>
-                    </div>
-                </div>
-
-
             </div>
-           </div>
             <!-- trySoftware -->
             <div class="trySoftware">
                 <div class="trySoftware-box">
@@ -617,7 +625,7 @@
         <div class="iconSMS">
             <img src="/img/iconSMS.png" alt="">
         </div>
-        <i class="fa-regular fa-circle-up upPage" onclick="scrollToTop()"></i>
+        <i class="fa-regular fa-circle-up upPage" onclick="scrollToTop()" style="display: none;"></i>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
@@ -625,6 +633,16 @@
             src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function () {
+                $('.autoplayLogo').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    prevArrow:
+                        "<button type='button' class='slick-prev pull-lef logo-left' ><i class='fas fa-chevron-left'></i></button>",
+                    nextArrow:
+                        "<button type='button' class='slick-next pull-right logo-right'><i class='fas fa-chevron-right'></i></button>",
+                });
                 $('.customers-slide').slick({
                     slidesToShow: 3,
                     slidesToScroll: 1,

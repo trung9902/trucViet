@@ -4,7 +4,39 @@ let Menu = document.querySelector(".main-menu");
 let setShow = document.getElementsByClassName("setShow");
 let search = document.querySelector(".search-input");
 let modalRegisted = document.querySelector(".modal_registed");
-console.log(modalRegisted);
+let dropdownMenu = document.querySelector(".dropdown-menu");
+const dropdown = document.querySelector(".menumobieleve");
+function updateLogoClass() {
+  const mediaQuery = window.matchMedia("(max-width: 992px)");
+  const customersLogo = document.querySelector(".customers-logo");
+
+  if (customersLogo) {
+    if (mediaQuery.matches) {
+      // Nếu kích thước màn hình nhỏ hơn hoặc bằng 992px
+      customersLogo.classList.add("autoplayLogo");
+    } else {
+      // Nếu kích thước màn hình lớn hơn 992px
+      customersLogo.classList.remove("autoplayLogo");
+    }
+  }
+}
+// Gọi hàm khi trang được tải
+document.addEventListener('DOMContentLoaded', updateLogoClass);
+
+// Lắng nghe sự thay đổi kích thước màn hình
+window.matchMedia('(max-width: 992px)').addEventListener('change', updateLogoClass);
+updateLogoClass();
+let openMenuleve2 = () => {
+  console.log("12");
+  console.log(dropdown);
+  if (dropdown.classList.contains("active")) {
+    dropdown.classList.remove("active");
+  } else {
+    dropdown.classList.add("active");
+    dropdownMenu.style.display = "block !important";
+  }
+};
+
 let upPage = document.querySelector(".upPage");
 const scrollToTop = () => {
   window.scrollTo({
@@ -245,6 +277,7 @@ let openMenuModal = () => {
 };
 let closeMenuModal = () => {
   ModalMenu.style.display = "none";
+  dropdown.classList.remove("active");
 };
 function checkScreenSize() {
   if (window.innerWidth <= 1201) {
@@ -354,3 +387,23 @@ listProduct();
 //     behavior: "smooth",
 //   });
 // };
+function updateLogoClass() {
+  const mediaQuery = window.matchMedia("(max-width: 992px)");
+  const customersLogo = document.querySelector(".customers-logo");
+
+  if (customersLogo) {
+    if (mediaQuery.matches) {
+      // Nếu kích thước màn hình nhỏ hơn hoặc bằng 992px
+      customersLogo.classList.add("autoplayLogo");
+    } else {
+      // Nếu kích thước màn hình lớn hơn 992px
+      customersLogo.classList.remove("autoplayLogo");
+    }
+  }
+}
+// Gọi hàm khi trang được tải
+document.addEventListener('DOMContentLoaded', updateLogoClass);
+
+// Lắng nghe sự thay đổi kích thước màn hình
+window.matchMedia('(max-width: 992px)').addEventListener('change', updateLogoClass);
+updateLogoClass();
