@@ -6,6 +6,13 @@ let search = document.querySelector(".search-input");
 let modalRegisted = document.querySelector(".modal_registed");
 let dropdownMenu = document.querySelector(".dropdown-menu");
 const dropdown = document.querySelector(".menumobieleve");
+let dropdownlist = document.querySelector("ul.setclick");
+console.log(dropdownlist);
+
+document.body.classList.add("modal-open");
+
+// Khi đóng modal
+document.body.classList.remove("modal-open");
 function updateLogoClass() {
   const mediaQuery = window.matchMedia("(max-width: 992px)");
   const customersLogo = document.querySelector(".customers-logo");
@@ -21,19 +28,47 @@ function updateLogoClass() {
   }
 }
 // Gọi hàm khi trang được tải
-document.addEventListener('DOMContentLoaded', updateLogoClass);
+document.addEventListener("DOMContentLoaded", updateLogoClass);
 
 // Lắng nghe sự thay đổi kích thước màn hình
-window.matchMedia('(max-width: 992px)').addEventListener('change', updateLogoClass);
+window
+  .matchMedia("(max-width: 992px)")
+  .addEventListener("change", updateLogoClass);
 updateLogoClass();
-let openMenuleve2 = () => {
+let openMenuleve2 = (elementClass) => {
+  const dropdown = document.querySelector(`.${elementClass}`);
+  if (!dropdown) {
+    console.error(`Element with class '${elementClass}' not found.`);
+    return;
+  }
+
   console.log("12");
   console.log(dropdown);
+
   if (dropdown.classList.contains("active")) {
     dropdown.classList.remove("active");
   } else {
     dropdown.classList.add("active");
-    dropdownMenu.style.display = "block !important";
+  }
+};
+let openMenuleve3 = (elementClass) => {
+  const dropdownTittle = document.querySelector(`.${elementClass}`);
+  if (!dropdownTittle) {
+    console.error(`Element with class '${elementClass}' not found.`);
+    return;
+  }
+
+  console.log("12");
+  console.log(dropdownTittle);
+
+  if (dropdownTittle.classList.contains("activee")) {
+    dropdownTittle.classList.remove("activee");
+    dropdownlist.style.display = "none !important";
+  } else {
+    dropdownTittle.classList.add("activee");
+    dropdownlist.style.display = "flex !important";
+    console.log('active');
+    
   }
 };
 
@@ -402,8 +437,10 @@ function updateLogoClass() {
   }
 }
 // Gọi hàm khi trang được tải
-document.addEventListener('DOMContentLoaded', updateLogoClass);
+document.addEventListener("DOMContentLoaded", updateLogoClass);
 
 // Lắng nghe sự thay đổi kích thước màn hình
-window.matchMedia('(max-width: 992px)').addEventListener('change', updateLogoClass);
+window
+  .matchMedia("(max-width: 992px)")
+  .addEventListener("change", updateLogoClass);
 updateLogoClass();

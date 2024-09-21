@@ -34,7 +34,7 @@
                                 <div class="dropdown-menu">
                                     <div class="dropdown-content">
                                         <div class="commercial-items">
-                                            <h3 class="dropdown-title">Sản phẩm thương mại</h3>
+                                            <h3 class="dropdown-title ">Sản phẩm thương mại</h3>
                                             <ul class="dropdown-list">
                                                 <li><a href="">Phần mềm Quản lý khách sạn</a></li>
                                                 <li><a href="">Phần mềm Quản lý nhà hàng</a></li>
@@ -50,7 +50,7 @@
                                             </ul>
                                         </div>
                                         <div class="free-items">
-                                            <h3 class="dropdown-title">Sản phẩm miễn phí</h3>
+                                            <h3 class="dropdown-title ">Sản phẩm miễn phí</h3>
                                             <ul class="dropdown-list">
                                                 <li><a href="">Phần mềm Quản lý quán ăn</a></li>
                                                 <li><a href="">Phần mềm Quản lý tạp hóa</a></li>
@@ -76,50 +76,72 @@
                         <div class="modal">
                             <i class="fa-solid fa-xmark close" style="display: none;" onclick="closeMenuModal()"></i>
                             <nav class="main-menu">
-
+                                <div class="menu-logo">
+                                    <a href="/index.html">
+                                        <img class="menulogo_img" src="./img/logo.png" alt="">
+            
+                                    </a>
+                                </div>
+                                <div class="search-box">
+                                    <i class="fa-solid fa-magnifying-glass"></i> <!-- Biểu tượng tìm kiếm -->
+                                    <input type="text" placeholder="Tìm kiếm">
+                                </div>
                                 <li class="nav-item"><a href="/index.html">Trang chủ</a></li>
                                 <li class="nav-item"><a href="">Giới Thiệu</a></li>
-                                <li class="nav-item dropdown menumobieleve " onclick="openMenuleve2()">
+                                <li class="nav-item dropdown menumobieleve ">
                                     <div class="dropdown-box">
                                         <a href="/product.html">Sản Phẩm</a>
-                                        <!-- <i class="fa-solid fa-chevron-down dowup"></i> -->
-                                        <i class="fa-solid fa-chevron-up dowup"></i>
+                                        <i class="fa-solid fa-chevron-down dowup"
+                                            onclick="openMenuleve2('menumobieleve')"></i>
+                                        <!-- <i class="fa-solid fa-chevron-up dowup"></i> -->
                                     </div>
                                     <div class="dropdown-menu">
                                         <div class="dropdown-content">
                                             <div class="commercial-items">
-                                                <h3 class="dropdown-title">Sản phẩm thương mại</h3>
-                                                <ul class="dropdown-list">
-                                                    <li><a href="">Phần mềm Quản lý khách sạn</a></li>
-                                                    <li><a href="">Phần mềm Quản lý nhà hàng</a></li>
-                                                    <li><a href="">Phần mềm Quản lý quán Cà phê</a></li>
-                                                    <li><a href="">Phần mềm Quản lý khu vui chơi, giải trí</a></li>
-                                                    <li><a href="">Phần mềm Quản lý kho</a></li>
-                                                    <li><a href="">Phần mềm Quản lý Siêu thị</a></li>
-                                                    <li><a href="">Phần mềm Quản lý văn phòng phẩm</a></li>
-                                                    <li><a href="">Phần mềm Quản lý shop quần áo</a></li>
-                                                    <li><a href="">Phần mềm Quản lý phụ tùng ô tô</a></li>
-                                                    <li><a href="">Phần mềm chấm điểm CCHC cấp tỉnh, cấp huyện</a></li>
-                                                    <li><a href="">Phần mềm Quản lý hồ sơ Người có công</a></li>
-                                                </ul>
+                                                <h3 class="dropdown-title setborder"><span>Sản phẩm thương mại</span> <i
+                                                        class="fa-solid fa-angle-down"
+                                                        onclick="openMenuleve3('setborder')"></i>
+
+                                                    <ul class="dropdown-list setclick">
+                                                        <li class="menu-item"><a href="">Phần mềm Quản lý khách sạn</a>
+                                                        </li>
+                                                        <li class="menu-item"><a href="">Phần mềm Quản lý nhà hàng</a>
+                                                        </li>
+                                                        <li class="menu-item"><a href="">Phần mềm Quản lý quán Cà
+                                                                phê</a></li>
+                                                        <li class="menu-item"><a href="">Phần mềm Quản lý khu vui chơi,
+                                                                giải trí</a></li>
+                                                        <li class="menu-item"><a href="">Phần mềm Quản lý kho</a></li>
+                                                        <li class="menu-item"><a href="">Phần mềm Quản lý Siêu thị</a>
+                                                        </li>
+                                                        <li class="menu-item"><a href="">Phần mềm Quản lý văn phòng
+                                                                phẩm</a></li>
+                                                        <li class="menu-item"><a href="">Phần mềm Quản lý shop quần
+                                                                áo</a></li>
+                                                        <li class="menu-item"><a href="">Phần mềm Quản lý phụ tùng ô
+                                                                tô</a></li>
+                                                        <li class="menu-item"><a href="">Phần mềm chấm điểm CCHC cấp
+                                                                tỉnh, cấp huyện</a></li>
+                                                        <li class="menu-item"><a href="">Phần mềm Quản lý hồ sơ Người có
+                                                                công</a></li>
+                                                    </ul>
+
+                                                </h3>
                                             </div>
-                                            <div class="free-items">
-                                                <h3 class="dropdown-title">Sản phẩm miễn phí</h3>
+                                            <div class="free-items ">
+                                                <h3 class="dropdown-title setborder setfreeItem">Sản phẩm miễn phí <i
+                                                        class="fa-solid fa-angle-down" onclick="openMenuleve3('setfreeItem')"></i>
                                                 <ul class="dropdown-list">
-                                                    <li><a href="">Phần mềm Quản lý quán ăn</a></li>
-                                                    <li><a href="">Phần mềm Quản lý tạp hóa</a></li>
+                                                    <li class="menu-item"><a href="">Phần mềm Quản lý quán ăn</a></li>
+                                                    <li class="menu-item"><a href="">Phần mềm Quản lý tạp hóa</a></li>
                                                 </ul>
+                                            </h3>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="nav-item"><a href="">Tin tức</a></li>
                                 <li class="nav-item"><a href="/support.html">Hỗ trợ</a></li>
-                                <li class="nav-search">
-                                    <i class="fa-solid fa-magnifying-glass" onclick="openIputSearch()">
-                                        <input type="text" id="search" placeholder="Tìm kiếm..." class="search-input" />
-                                    </i>
-                                </li>
 
                             </nav>
                         </div>
@@ -421,20 +443,23 @@
             </div>
             <!-- videoInstruct -->
             <div class="video-instruct">
-                <div class="video-instruct__thumbnail">
-                    <img src="/img/videoInstruct/thumb-1.png" alt="" class="video-instruct__image">
-                    <i class="fa-solid fa-circle-play video-instruct__play-icon"></i>
-                </div>
                 <div class="introduce-image_box">
-                    <div class="introduce-title_box">
-                        <img src="/img/intro1.png" alt="" class="">
-                        <p class="intro-tittle"><a href="">Video <br><b class="tittle_b">Hướng
-                                    Dẫn</b></a></p>
-                        <img src="/img/intro2.png" alt="" class="">
+                    <div class="wrapper-container">
+                        <div class="video-instruct__thumbnail">
+                            <img src="/img/videoInstruct/thumb-1.png" alt="" class="video-instruct__image">
+                            <i class="fa-solid fa-circle-play video-instruct__play-icon"></i>
+                        </div>
+                        <div class="introduce-container">
+                            <div class="introduce-title_box">
+                                <img src="/img/intro1.png" alt="" class="">
+                                <p class="intro-tittle"><a href="">Video <br><b class="tittle_b">Hướng Dẫn</b></a></p>
+                                <img src="/img/intro2.png" alt="" class="">
+                            </div>
+                            <p class="instruct-des"><i class="fa-solid fa-forward green"></i>&nbsp Giải pháp quản lý cho
+                                mọi nhà kinh doanh</p>
+                        </div>
                     </div>
-                    <p class="instruct-des"><i class="fa-solid fa-forward green"></i>&nbsp Giải pháp quản lý cho mọi
-                        nhà
-                        kinh doanh</p>
+
                     <div class="video-instruct-box">
                         <div class="video-instruct-box_img">
                             <a href=""><img src="/img/videoInstruct/thumb-2.png" alt=""></a>
@@ -634,7 +659,7 @@
         <script type="text/javascript">
             $(document).ready(function () {
                 $('.autoplayLogo').slick({
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     autoplay: true,
                     autoplaySpeed: 2000,
@@ -726,7 +751,7 @@
                 prevArrow:
                     "<button type='button' class='slick-prev pull-left productbutton-pre setDisplay` ><i class='fas fa-chevron-left'></i></button>",
                 nextArrow:
-                    "<button type='button' class='slick-next pull-right productbutton-next setNext'><i class='fas fa-chevron-right'></i></button>",
+                    "<button type='button' class='slick-next pull-right productbutton-next setNext'><i class='fa-solid fa-caret-right'></i></button>",
             });
 
         </script>
