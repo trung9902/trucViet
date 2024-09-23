@@ -788,7 +788,7 @@ p.item2 {
 
 .navbar .right {
     width: 48%;
-    padding-top: 123px;
+    padding-top: 102px;
     padding-left: 0;
 }
 
@@ -803,7 +803,7 @@ p.item2 {
 }
 
 .navbar .right li p {
-    font-size: 1.8rem;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -816,7 +816,7 @@ p.item2 {
 }
 
 .navbar .right li+li {
-    padding-top: 10px;
+    padding-top: 42px;
 }
 
 /* customers */
@@ -3564,6 +3564,9 @@ img.customers-logo__image {
 
     .navbar .right {
         padding-top: 113px;
+    }
+    .navbar .right li+li{
+        padding-top: 14px;
     }
 
     .navbar .icon-center {
