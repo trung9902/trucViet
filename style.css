@@ -4452,6 +4452,9 @@ img.customers-logo__image {
     .update-right {
         color: #fff !important;
     }
+    .dropdown-menu {
+        padding: 20px;
+    }
 
 
 }
