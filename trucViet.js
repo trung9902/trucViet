@@ -7,6 +7,7 @@ let modalRegisted = document.querySelector(".modal_registed");
 let dropdownMenu = document.querySelector(".dropdown-menu");
 const dropdown = document.querySelector(".menumobieleve");
 let dropdownlist = document.querySelector("ul.setclick");
+let productMenuItem = document.querySelector('.product-menu_item') 
 console.log(dropdownlist);
 
 document.body.classList.add("modal-open");
@@ -115,7 +116,12 @@ window.addEventListener("scroll", () => {
   }
 });
 
-let loadContent = (number) => {
+let loadContent = (number,element) => {
+  let productMenuItem = document.getElementsByClassName('product-menu_item') 
+  for (let i = 0; i < productMenuItem.length; i++) {
+    productMenuItem[i].classList.remove('active');
+  }
+  element.classList.add('active');
   let content = "";
   console.log("1");
 
